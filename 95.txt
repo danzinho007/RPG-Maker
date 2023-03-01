@@ -1,0 +1,119 @@
+RPG Maker 95
+
+Comandos :
+
+Alt +
+F4 = Sair
+
+CTRL +
+C = Copiar
+V = Colar
+Z = Desfazer
+
+Del = Deletar
+
+Menu : Arquivo Editar Mapa Jogo Opções Testar Ajuda
+
+
+-Arquivo :
+--Novo Jogo = Cria um Novo Jogo
+--Abrir Jogo = Abrir um Jogo formato .RPG
+--Salvar = Salvar automaticamente
+--Salvar Como... = Salvar pela 1° vez ou Salvar com nome diferente
+--Sair = Sai do Programa
+
+-Editar
+--Desfazer = Desfaz algo
+--Copiar = Copia algo
+--Colar = Cola algo
+--Delete = Deleta algo
+--Selecionar Tudo = Seleciona Tudo
+
+-Mapa
+--Modo Edição
+---Copiar & Colar = Seleciona algo e cola em outro
+---Mapas = Cola objetos no cenário
+---Eventos = Configura os Eventos
+--Tamanho
+---1 = Normal
+---1/4 = Bem menor
+---1/16 = Muito menor
+--Zoom = É quando você muda por exemplo pra 1/4 ou 1/16, dai você escolhe pra dar Zoom em alguma área, se for 1/16 vai pra 1/4, se for 1/4 vai pra 1
+
+-Jogo
+--Editor de Personagens... = Editar Nome, Nível, Poder, Força, Inteligência, Defesa, Sorte, Magias, Dano Mágico, Equipamento e Intens Inicias
+
+Abreviações : ( Podem ser editadas )
+Pw = Poder
+Str = Força
+Int = Inteligência
+Speed = Dextreza
+LK = Sorte
+
+Atq = Ataque
+Def = Defesa
+
+Exemplo :
+Classe Lv X - HP - MP - Pw - Str - Int - Speed - Lk - Atq - Def
+Humano Lv 1 - 50 - 40 - 05 - 05 --- 05 --- 10 --- 12 - 05 -- 05
+Soldado   1 - 90 - 40 - 13 - 09 --- 05 --- 08 --- 10 --13 -- 09
+
+Classes pra Referência :
+Humano, Soldado, Clérigo, Mago, Anão, Ladrão, Ninja, Hobbit, Bardo, Dançarino e Demônio
+
+--... de Inimigos... = Editar Nome, HP, MP, Atq, Def, Des, Exp, Ouro, Item, % Item, Padrão de Atq, DanoMágico, MudarImagem, CriarEquipes, Fundo, Terreno
+
+Lembrando :
+Des = Dextreza
+Prob = Probabilidade do Item ( % )
+
+Exemplo : Des é Dextreza
+Nome         -  HP  -  MP -  Atq-Def  - Des - Exp - Ouro - Item    - Prob
+Chimera      -  299 -  78 -  97 - 92  - 25 -  73  -  58  - B.Dragon - 1
+Demon Seraph - 1600 - 620 - 186 - 128 - 54 - 1425 - 1050 - W.Tiger  - 1
+
+--... de Itens... = Editar Nome, Preço, Tipo, Efeito e Usado por
+
+Lembrando :
+Prç = Preço
+Efe = Efeito
+
+Exemplo :
+No - Nome        - Prç - Tipo - Efe - Usado por
+1  - Cure Potion - 30 - HPup - 100 - Todos
+2  - Hight Potion - 70 - HPup - 200 - Todos
+18 - BroadSword   - 500 - Arma -  25 - 12----
+
+Obs : Esse 12--- = Significa que vale pro 1° e 2° personagem, nós podemos ter no máximo 8
+
+--... de Magia... = Editar Nome, Efe, Custo e Dano
+
+Exemplo :
+
+No - Nome      - Efe       - Custo - Dano
+1 - Flame Bolt - Acerta Um - 15    - 50
+5 - Fire Ball - Acerta Todos - 25  - 35
+
+--Ajustar Paleta...
+
+-Opções
+--Propriedade do Jogo
+--BGM
+--Posição Inicial
+--Evento Inicial
+--Evento de Morte...
+--Editor de Textos...
+
+-Testar
+--Iniciar Teste
+--Carregar Teste
+--Modo Tela Cheia
+--Desativar Abertura
+--Desativar BGM
+--Desativar Batalhas
+--Invencível
+
+-Ajuda
+--Index
+--Usando a Ajuda
+--Sobre o RPG Maker 95...
