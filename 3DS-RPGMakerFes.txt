@@ -1,3 +1,4 @@
+
 Manuais 
 
 http://www.program1031.com/2017/06/rpg-maker-fes-tutorials-games-and-help.html
@@ -20,6 +21,165 @@ N�o tem
 https://www.nintendo.com/consumer/manuals/3ds.jsp
 https://www.oldgames.sk/en/extras.php?typ=4&orderby=reviewname&orderdir=ASC&page=13
 http://www.replacementdocs.com/download.php?list.60
+
+Preparação :
+
+1° Menu Principal : Criar Novo
+2° Database > Title 
+Escolha um Título para seu RPG
+3° Save 
+1° Database > Monsters 
+Criar 5 monstros
+2° Database > Profissão 
+Criar 5 profissões
+3° Database > Weapons 
+Criar 5 armas
+4° Database > Defensive items
+Criar 5 Armaduras
+5° Database > Items 
+Criar 5 itens
+6° Database > Title
+Colocar um título pro jogo
+7° Database > Character
+Por uma profissão no personagem
+
+---Termos :
+
+-Mapas = São locais que o personagem irá caminhar, temos 2 tipos ( Mapas Mundiais e Mapas de Área )
+Mundiais = Tipo o planeta Terra 
+Mapas de Área = Temos 3 tipos : Cidade ( Construções urbanas ), Masmorra ( Cavernas ) e Interior ( Interior das Construções )
+
+Eventos :
+
+Event name = Nome do Evento
+Graphic = Gráfico que vai aparecer
+Direction = Pra onde vai estar apontado o gráfico do evento
+Event content = Cria conteúdo para quando o evento é executado
+Move = Movimentação do evento 
+Speed = Velocidade do Movimento
+-Start = Execução do evento :
+When character touches = Quando o personagem encostar nele
+When touched by event = Quando é tocado pelo evento
+Investigate = Quando o personagem aperta A sobre o evento
+Use item = Executado quando o personagem próximo usa algum item, sobressai sobre tudo
+Auto execute = Executa automático, a menos que seja interrompido por um switch que mude a página
+
+Conteúdos do Evento :
+
+-Message control = Controle de mensagem
+-Move control = Controle de movimento
+-Condition control = Controle de condição
+-Screen control = Controle de janela
+-Status control = Controle de Status
+-Sound control = Controle de som
+-Branch control = Controle de filial
+-Actionc control = Controle de ação
+-Time control = Controle de tempo
+-Screen functions = Controle de janela
+
+---Message control---
+-Message = Cria um texto para algum personagem ou uma mensagem no quadro de avisos
+-Subtitles = Cria subtítulos que vem de baixo pra cima ou no meio
+
+---Profissões : Foco
+
+-Swordsman : HP, Str e Spd
+Pontos 33
+-Knight    : HP, Str e Def
+Pontos 33
+-Hero      : HP, Mp  e Def + Spd
+Pontos 50
+-Mage      : MP, Mag e Int
+Cleric    : MP, Int e HP + Mag
+Brawler   : HP, Str e Def
+Archer    : Spd, HP e Str
+Thief     : Spd, HP e Str + Int
+WarriorMag: HP, Str e Spd
+Paladin   : HP, Def e Str
+DarkKnight: HP, Str e Spd
+Samurai   : HP, Str e Spd
+Berserker : HP, Str e Spd
+Gladiator : HP, Str e Def
+Wizard    : Mag, MP e Int
+Sorcerer  : MP, Mag e Int
+Sage      : Int, Mp e Mag
+Necromance: Int, Mag e Mp
+Bishop    : Mp, Mag e Int
+Priest    : MP, HP + Mag + Int
+Geomaster :
+Shaman    :
+Hunter    :
+Bandit    :
+Ninja     :
+Mercenary :
+Pirate    :
+Bard      :
+Merchant  :
+Android   :
+Angel     :
+God       :
+
+Sugestões :
+Swordsman > Knight > Hero
+
+Database > Character
+
+Settings / Configura��es
+
+Name = Nome do personagem
+Nickname = Como ele e conhecido
+Profession = Profiss�o dele
+Mag Def = Defesa M�gica = Idem Ataque
+HP = Vida do Personagem , idem ataque tambem
+MP = Mana do personagem , idem ataque tambem
+STR = Forca , idem ataque tamb�m
+DEF = Defesa , idem ataque tamb�m
+MAG = Magia , idem ataque tamb�m
+INT = Intelig�ncia , idem ataque tamb�m
+SPD = Velocidade , idem ataque tamb�m
+
+Category Fantasy - Bases : 
+
+Triangle-roof houve
+1 = Casa pequena com 1 cama
+2 = Casa pequena com 2 camas
+3 = ...
+4 = Casa vertical com 2 camas
+9 = Loja de Armas
+12 = Casa enorme
+14 = ...
+16 = Igreja
+18 = Igreja grande
+
+Mud brick house
+1 = Casa pequena com 2 camas
+2 = ... m�dia com 2 camas, s�Eque na diagonal
+3 = Casa grande com 4 camas
+4 = ... , s�Eque na diagonal
+10 = Sala de Magia
+11 = Loja de Armas grande
+13 = Igreja grande
+14 = ...
+15 = Casa grande
+
+Wooden house
+1 = Casa pequena com 1 cama
+2 = Casa pequena
+3 = Casa m�dia com 2 camas
+4 = Casa m�dica na vertical
+12 = Igreja grande
+13 = Casa m�dia com 4 camas + Sala de Magia
+14 = Sala de magia m�dia na vertical
+15 = Loja de itens pequena
+
+Log house
+1 = Casa pequena com 1 cama
+2 = Casa pequena com 2 camas
+3 = Casa m�dia com 3 camas
+4 = Casa m�dia com 3 camas na vertical
+11 = Loja de frutas
+12 = Pousada
+13 = Loja de Armas
 
 Vamos na 01 da Base Basic / B�sica da Categoria Fantasy / Fantasia  , nela tem :
 
