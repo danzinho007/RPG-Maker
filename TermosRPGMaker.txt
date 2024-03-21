@@ -1,0 +1,5 @@
+---Termos :
+
+-Mapas = São locais que o personagem irá caminhar, temos 2 tipos ( Mapas Mundiais e Mapas de Área )
+Mundiais = Tipo o planeta Terra 
+Mapas de Área = Temos 3 tipos : Cidade ( Construções urbanas ), Masmorra ( Cavernas ) e Interior ( Interior das Construções )
