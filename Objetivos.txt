@@ -1,0 +1,1042 @@
+Funções do RPG Maker :
+
+Modelo :
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+---Message control : 02
+
+Dificuldade : 1
+Quantos eventos usa : 1 Message
+Quantas páginas usa : 1
+Explicação : Cria um texto para personagem / quadro
+
+Dificuldade :
+Quantos eventos usa : 1 Subtitle
+Quantas páginas usa : 1 
+Explicação : Cria subtítulos 
+
+---Move Control : 13
+
+Dificuldade :
+Quantos eventos usa : 1 Move location
+Quantas páginas usa : 1
+Explicação : Teleporte 
+
+Dificuldade :
+Quantos eventos usa : 1 Hero movement
+Quantas páginas usa : 1
+Explicação : Movimenta o personagem
+
+Dificuldade :
+Quantos eventos usa : 1 Hero direction
+Quantas páginas usa : 1
+Explicação : Altera direção do personagem
+
+Dificuldade :
+Quantos eventos usa : 1 Hero jump
+Quantas páginas usa : 1
+Explicação : Faz o personagem pular
+
+Dificuldade :
+Quantos eventos usa : 1 The event's movement
+Quantas páginas usa : 1
+Explicação : Movimento o evento
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+---Condition control : 04
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+---Screen control : 10
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+---Status control : 12
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+---Sound control : 02
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+---Branch control : 08
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
