@@ -47,160 +47,165 @@ Quantas páginas usa : 1
 Explicação : Movimento o evento
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Altera direção do evento
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Altera ângulo do evento
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Faz o evento pular
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Movimenta outro evento
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Altera direção de outro evento
+
+Dificuldade : 1
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Altera ângulo de outro evento
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Faz outro evento pular
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
-
-Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Ativa outro evento
 
 ---Condition control : 04
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Altera aparência de tudo
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Cria uma ação para personagem ou evento
 
-Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Dificuldade : 1
+Quantos eventos usa : 1 
+Quantas páginas usa : 1
+Explicação : Mostra uma animação para o personagem ou eventos
 
-Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Dificuldade : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Mostra um ícone sobre a cabeça
 
 ---Screen control : 10
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Move janela somente, sem mover o personagem
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Retorna posição de janela para o personagem
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Escurece / Clareia a janela
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Altera cor da janela
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Pisca a janela
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Estremece a janela
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Altera o tempo
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Mostra 1 animação para personagem ou evento
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Mostra 1 ilustração na tela
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Mostra 1 / 2 variável/eis na tela 
 
 ---Status control : 12
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1 
+Quantas páginas usa : 1
+Explicação : Aumenta / Diminui o ouro do grupo
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Aumenta / Diminui o item do grupo
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Aumenta / Diminui a quantidade de arma do grupo
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Aumenta / Diminui a quantidade de armadura do grupo
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Aumenta / Diminui o HP / MP do grupo / personagem
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Altera os status ( Envenado, curar veneno, derrubado ou curado ) do grupo / personagem
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Cura todos do grupo
+
+Dificuldade : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : Evolui o nível do grupo / personagem
 
 Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+Quantos eventos usa : 1
+Quantas páginas usa : 1
+Explicação : E
 
 Dificuldade :
 Quantos eventos usa : 
@@ -276,10 +281,7 @@ Quantos eventos usa :
 Quantas páginas usa :
 Explicação : 
 
-Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+---Action control : 05
 
 Dificuldade :
 Quantos eventos usa : 
@@ -306,10 +308,7 @@ Quantos eventos usa :
 Quantas páginas usa :
 Explicação : 
 
-Dificuldade :
-Quantos eventos usa : 
-Quantas páginas usa :
-Explicação : 
+---Time control : 05
 
 Dificuldade :
 Quantos eventos usa : 
@@ -325,6 +324,18 @@ Dificuldade :
 Quantos eventos usa : 
 Quantas páginas usa :
 Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+Dificuldade :
+Quantos eventos usa : 
+Quantas páginas usa :
+Explicação : 
+
+---Screen function : 06
 
 Dificuldade :
 Quantos eventos usa : 
