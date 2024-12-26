@@ -1,0 +1,7 @@
+Índice :
+
+1- Comentários
+2- Variáveis
+3- Operações com variáveis
+4- Condições com If, Else e Elsif
+5- 

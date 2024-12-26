@@ -1,0 +1,40 @@
+Palavras Reservadas :
+
+alias
+and = e
+begin
+BEGIN
+-break = quebra
+-case = caso
+class = Classe
+def = função
+defined?
+do
+else = senão
+elsif = senão ... se
+end = encerra
+END
+ensure
+-false = false
+-for = para
+-if = Se
+-in
+-module
+-next
+-nil = nulo
+-not = não
+-or = ou
+-redo
+rescue
+retry
+-return = returna
+-self = método/classe atual
+-super
+-then
+-true = verdadeiro
+undef
+-unless = até
+-until = repete até
+-when = quando
+-while = enquanto
+-yield

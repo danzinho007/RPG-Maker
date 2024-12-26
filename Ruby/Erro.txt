@@ -1,0 +1,11 @@
+Erros em Ruby :
+
+-NameError
+undefined local variable or method number for nill:Class
+
+-NoMethodError
+undefined method x1 for nill:Class
+
+-SyntaxError
+Erro de sintaxe, por exemplo :
+1- Usar palavras reservadas em código

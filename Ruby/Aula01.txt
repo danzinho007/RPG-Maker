@@ -1,0 +1,87 @@
+Sites :
+
+Aula 01 :
+https://centrorpg.com/index.php?PHPSESSID=9d18137711f67a4b6168fc5880185695&topic=16769.msg127696#msg127696
+
+https://www.youtube.com/watch?v=VJ-M7O3qJkQ
+
+Comentários
+Não são executados
+
+# Comentário
+
+% Comentário
+
+=begin
+Comentário
+Comentário
+=end
+
+Aula 02 :
+
+Variáveis
+Pode guardar uma ou várias informações
+
+number = 10 
+string = "Texto"
+symbol = :symbol
+bool = true
+bool = false
+
+Aula 03 
+https://www.youtube.com/watch?v=FCCZuwDleRM
+
+Operações com variáveis :
+
+# Pode ser usada onde foi criada e alterada :
+local = 10 
+# Pode ser usada em qualquer lugar :
+%global = "Global"
+
+# Printar o número 10 :
+number = 10
+p number
+
+# Operações com variáveis  :
+p number + 5 # Adição
+p number += 5 
+p number - 5 # Subtração
+p number * 5 # Multiplicação
+p number / 5 # Divisão
+p number % 5 # Resto da Divisão
+
+Aula 04 :
+https://www.youtube.com/watch?v=gGq16NtCLQc
+
+Condições com If, Else e Elsif :
+
+Operadores Relacionais :
+
+Igual : =
+Diferente : <> ou #
+Maior que : >
+Menor que : <
+Maior ou igual : >=
+Menor ou igual : <=
+
+Operadores Lógicos :
+E : AND
+Ou : OR
+Não : NOT
+
+Verdadeiro ou Falso = V ou F :
+Pro "AND" = Só vai ser V se os 2 forem V, caso contrário será F
+Pro "OR" = Se algum for V, vai ser V
+Pro "NOT" = Não V é F, não F é V
+
+Outros :
+
+https://depositodesistemasml.blogspot.com/2013/12/o-rpgmaker-testes-e-editor-de-scripts.html
+
+https://makerpedia.fandom.com/pt-br/wiki/Ruby_Game_Scripting_System
+
+https://rpgm.fandom.com/wiki/Ruby_Game_Scripting_System
+
+https://www.youtube.com/watch?v=scO0nHl3gK4
+
+

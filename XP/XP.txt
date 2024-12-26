@@ -1,0 +1,175 @@
+RPG Maker XP :
+
+1- Qual a linguagem do RPG Maker XP ?
+Ruby 1.8.2
+
+2- Jogos :
+Ao Oni = Famoso ( 2 )
+Legend of Saga ( 2000 ) = Trilogia
+Grimms Hollow
+-O Dragão do Monte Silaf ( VX )
+Omori = Famoso ( 2 )
+One Shot
+-Safira ( VX ) = Fase
+-To the Moon
+Yume Nikki = 
+
+Aula 01 
+
+Atalhos :
+F12 = Rodas o jogo
+CTRL + S = Salvar jogo
+
+-Condition
+Self switch = 
+-Autonomous moviment ( Movimentação autônoma )
+Approuch = Vai se aproximar do personagem
+Player Touch = Se o jogador encostar vai ocorrer o evento 
+Event Touch = Se o evento encostar no jogador
+Autorun = Começa de forma automática
+Parallel Process = Vai acontecer direto 
+
+-Speed ( Velocidade )
+
+-Frequency ( Frequência )
+0 a 6
+Quanto maior a frequência mais ele vai pegar o caminho menor
+
+-Move animation
+
+-Trigger ( Gatilho )
+Action Button = Apertar um botão pra acontecer algo
+
+---Eventos :
+
+Ativar a alavanca A :
+@>Control Self Switch A =ON
+
+Esperar 60 segundos :
+@>Wait: 60frame(s)
+
+Mostrar escolhas na tela :
+@>Show Choices: Yes, No
+: When[Yes]
+  @>
+: When [No]
+  @>
+: Branch End
+
+Mostrar texto na tela :
+@>Text: Olá
+
+Mostrar texto na tela exibir o nome do 1° personagem :
+@>Text: Olá \n[1]
+
+Mudar os tons da tela pra cor escura depois de 60 segundos :
+@>Change Scren Color Tone (-200,200,-200,0), @60
+
+Pedir pro usuário digitar algo :
+@>Name Input Processing: Aluxes, 6 characters
+
+Tocar efeito de som 066-Animal01 no volume 80 frequência 120 :
+@>PlaySE '066-Animal01', 80, 120
+
+1. Mostrar mensagem: O evento mostrará na tela do jogo uma mensagem que você escreveu.
+2. Mostrar escolhas: Mostrará uma tela com quatro ou menos escolhas possíveis, que você terá de predeterminar para o personagem escolher (e cada escolha levará a outras ações, programáveis).
+3. Armazenar número: Armazenará um número que poderá ser usado de inúmeras maneiras com variáveis e switches.
+4. Opções de Mensagem: Aqui você define onde é que a sua mensagem irá aparecer, e se ela irá aparecer com ou sem a windowskin.
+5. Definir teclas: Define uma variável que será usada pressionando-se uma tecla no momento em que aquele evento acontecer. É um pouco complicado: recomenda-se a um iniciante que primeiro aprenda como funcionam switchs e variáveis (são explicados nas próximas partes do tutorial de iniciantes).
+6. Esperar: Coloca um tempo de espera entre ações do evento, ou entre ações do personagem. Dica: 20 frames = 1 segundo.
+7. Comentário: Deixe aqui um comentário qualquer que você queira. Isso não afeta em nada o evento. É só para você colocar lá algumas notas, para não se esquecer do que quer fazer, ou do que já fez. Por vezes, alguns scripts também usam os comentários para definir ações (especialmente os sistemas de batalha).
+8. Condições: Uma das coisas mais importantes nos eventos. Uma condição determina se um evento vai acontecer ou não, dependendo do que já aconteceu antes, então isso pode ser muito usado. Exemplo: para abrir uma porta, é necessário ter o item “chave”, ou para seguir por uma floresta, é necessário possuir nível 10, etc.
+9. Ciclo: Aqui você pode criar um ciclo que vai repetindo todos os comandos que estejam dentro dele, até que seja interrompido.
+10. Romper ciclo: Serve para terminar com um ciclo.
+11. Parar Evento: Serve para fazer com que um evento pare de acontecer.
+12. Apagar evento temporário: Esta opção faz com que o evento deixe de agir no mapa.
+13. Evento Comum: Inicia um Evento Comum que você previamente configurou no Database/Banco de Dados (F9).
+14. Label: Serve para você marcar o início de uma sequência de comandos.
+15. Ir para Label: Vá para o Label que anteriormente configurou.
+16. Opções de Switch: Ativa ou desativa uma switch.
+17. Opções de Variável: Aqui você define uma variável.
+18. Controle de Switch local: Ativa ou desativa uma switch local do evento.
+19. Operações de tempo: Serve para iniciar uma contagem regressiva na tela para que aconteça alguma coisa quando ela acabar, ou para parar uma contagem regressiva já iniciada.
+20. Mudar dinheiro: Aumenta ou diminui o dinheiro do personagem.
+21. Mudar Itens: Adiciona ou retira um item do personagem.
+22. Mudar Arma: Adiciona ou retira uma arma do personagem.
+23. Mudar Armadura: Adiciona ou retira uma defesa (elmo, escudo, armadura, acessório) do personagem.
+24. Mudar Grupo: Adiciona ou remove uma pessoa do seu grupo.
+25. Mudar Gráfico do Sistema: Altera a windowskin.
+26. Mudar BGM de batalha: Muda a música que será tocada quando uma batalha começar.
+27. Mudar ME de batalha: Muda o som que dá quando uma batalha termina com vitória sua.
+28. Opção de Save: Permitir ou proibir que o jogador salve o jogo.
+29. Opção de Menu: Permitir ou proibir que o jogador entre no menu.
+30. Opção de Encontros: Permitir ou proibir que o jogador encontre batalhas.
+
+Vejamos agora a 2ª aba de comandos:
+
+Tutorial para Iniciantes - RMXP - Comandos de Eventos
+
+1. Teletransporte: Leva o seu personagem para outro mapa, ou para outro local do mesmo mapa.
+2. Posição de evento: Altera a posição de um evento.
+3. Movimento da tela: Movimente a tela, independentemente do local onde o personagem se encontra.
+4. Opções do Mapa: Defina aqui o panorama, a névoa e até mesmo o fundo de batalha que será usado neste mapa.
+5. Tom da Névoa: Altere aqui a cor que a névoa irá ter neste mapa.
+6. Opacidade da Névoa: Altere a transparência da névoa.
+7. Mostrar Animação: Mostra uma animação anteriormente configurada no Database/Banco de Dados (F9), no personagem ou num evento.
+8. Mudar Transparência: Muda a transparência de seu personagem, para ficar totalmente invisível ou voltar ao normal.
+9. Mover Evento: Movimenta o personagem ou um evento sozinho pelo mapa. Para além de o mover, pode fazer muitas outras coisas, como saltar, mudar de direção, mudar de gráfico ou opacidade, etc.
+10. Esperar Fim do Movimento: O evento irá esperar que o comando de “Mover evento” acabe, para que só depois avance para os próximos comandos.
+11. Preparar Transição: Prepara uma transição que ocorrerá.
+12. Executar transição: Executa uma transição.
+13. Cor da Tela: Muda a cor da tela para a cor escolhida.
+14. Efeito Flash: Dá um efeito de Flash na tela com a cor escolhida durante o tempo determinado. Dica: 20 frames = 1 segundo.
+15. Efeito tremor: Treme a tela com a força, velocidade e duração determinadas por você.
+16. Mostrar imagem: Mostra uma imagem na tela de acordo com as coordenadas X e Y que você definir. Dica: X = Horizontal; Y = Vertical.
+17. Mover imagem: Move uma imagem previamente posta na tela, para outra posição.
+18. Girar Imagem: Gira uma imagem previamente posta na tela.
+19. Tonalidade da imagem: Muda a tonalidade da imagem previamente posta na tela.
+20. Deletar Imagem: Apaga uma imagem que esteja na tela.
+21. Opções de Clima: Altera o clima do mapa para: tempo limpo, chuva, tempestade ou neve.
+22. Reproduzir BGM: Reproduz uma música que esteja na pasta BGM.
+23. Parar BGM: Faz parar uma BGM que esteja tocando.
+24. Memorizar BGM / BGS: Memoriza a BGM e a BGS que estão tocando.
+25. Reproduzir Memorizados: Reproduz a BGM e a BGS anteriormente memorizadas.
+26. Reproduzir ME: Reproduz um som que esteja na pasta ME.
+27. Reproduzir SE: Reproduz um som que esteja na pasta SE.
+28. Parar SE: Faz parar uma SE que esteja tocando.
+
+Por fim, vejamos o que nos aguarda na 3ª aba:
+
+Tutorial para Iniciantes - RMXP - Comandos de Eventos
+
+1. Iniciar Batalha: Inicia uma batalha com os monstros que você escolher.
+2. Inserir Loja: Abre uma loja com os itens, armas e armaduras que você decidir vender.
+3. Inserir nome do Herói: Este comando permite ao jogador inserir um nome costumizado para o seu personagem.
+4. Mudar HP: Aumente ou diminua o HP de um certo personagem ou de todo o grupo.
+5. Mudar MP: Aumente ou diminua o MP de um certo personagem ou de todo o grupo.
+6. Mudar Status: Altera o status de um certo personagem ou de todo o grupo, para um status anteriormente configurado no Database/Banco de Dados (F9).
+7. Curar Tudo: Cura completamente todo o grupo ou um personagem específico.
+8. Mudar EXP: Aumenta ou diminui a experiência de um personagem específico ou de todo o grupo.
+9. Mudar Nível: Aumenta ou diminui o nível de um personagem específico ou de todo o grupo.
+10. Mudar Parâmetros: Altera os parâmetros (HP máxima, MP máxima, Força, Destreza, Agilidade, Inteligência) de um personagem ou de todo o grupo.
+11. Mudar Habilidades: Aqui você pode fazer com que um personagem aprenda, ou perca uma habilidade anteriormente configurada no Database/Banco de Dados (F9).
+12. Mudar equipamento: Muda os equipamentos do seu personagem.
+13. Mudar nome do Herói: Altera o nome do Herói para um que você define aqui no evento.
+14. Mudar Classe: Altera a classe do personagem.
+15. Mudar Gráfico do Herói: Altera o character e/ou o battler de um personagem.
+16. Mudar HP do inimigo: Aumente ou diminua a HP de um certo inimigo.
+17. Mudar MP do inimigo: Aumente ou diminua a MP de um certo inimigo.
+18. Mudar Status do inimigo: Altera o status de um certo inimigo para um status anteriormente configurado no Database/Banco de Dados (F9).
+19. Curar Inimigo: Cura completamente um inimigo.
+20. Aparição Inimiga: Faz aparecer um certo grupo de inimigos.
+21. Transformação Inimiga: Aqui você define se o inimigo vai se transformar em outro inimigo, anteriormente configurado no Database/Banco de Dados (F9).
+22. Mostrar animação: Mostra uma animação no inimigo ou no herói.
+23. Receber Dano: Atribua dano (perca de HP) a um personagem ou inimigo.
+24. Forçar Ação: Esta opção força o seu personagem ou um dos inimigos a fazer alguma coisa, seja atacar, fugir, defender ou esperar.
+25. Parar Batalha: Faz parar a batalha em curso, interrompendo-a.
+26. Chamar Menu: Abre o menu, automaticamente.
+27. Chamar Menu de Save: Chama o menu de save, onde você poderá salvar o jogo.
+28. Game Over: Chama a tela de Game Over, ou seja, o jogo acaba.
+29. Voltar à Tela Título: Volta à tela inicial, onde diz: “Novo jogo”, “Continuar” e “Sair”.
+30. Chamar Script: Aqui você coloca comandos em RGSS para fazer qualquer coisa. Para isso você precisa saber programar em RGSS.
+
+
+
+Leia mais: https://internectado.webnode.com.br/products/tutorial-para-iniciantes-no-rpg-maker/
