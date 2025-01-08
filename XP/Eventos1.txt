@@ -1,0 +1,32 @@
+---Eventos :
+
+1. Mostrar mensagem: O evento mostrará na tela do jogo uma mensagem que você escreveu.
+2. Mostrar escolhas: Mostrará uma tela com quatro ou menos escolhas possíveis, que você terá de predeterminar para o personagem escolher (e cada escolha levará a outras ações, programáveis).
+3. Armazenar número: Armazenará um número que poderá ser usado de inúmeras maneiras com variáveis e switches.
+4. Opções de Mensagem: Aqui você define onde é que a sua mensagem irá aparecer, e se ela irá aparecer com ou sem a windowskin.
+5. Definir teclas: Define uma variável que será usada pressionando-se uma tecla no momento em que aquele evento acontecer. É um pouco complicado: recomenda-se a um iniciante que primeiro aprenda como funcionam switchs e variáveis (são explicados nas próximas partes do tutorial de iniciantes).
+6. Esperar: Coloca um tempo de espera entre ações do evento, ou entre ações do personagem. Dica: 20 frames = 1 segundo.
+7. Comentário: Deixe aqui um comentário qualquer que você queira. Isso não afeta em nada o evento. É só para você colocar lá algumas notas, para não se esquecer do que quer fazer, ou do que já fez. Por vezes, alguns scripts também usam os comentários para definir ações (especialmente os sistemas de batalha).
+8. Condições: Uma das coisas mais importantes nos eventos. Uma condição determina se um evento vai acontecer ou não, dependendo do que já aconteceu antes, então isso pode ser muito usado. Exemplo: para abrir uma porta, é necessário ter o item “chave”, ou para seguir por uma floresta, é necessário possuir nível 10, etc.
+9. Ciclo: Aqui você pode criar um ciclo que vai repetindo todos os comandos que estejam dentro dele, até que seja interrompido.
+10. Romper ciclo: Serve para terminar com um ciclo.
+11. Parar Evento: Serve para fazer com que um evento pare de acontecer.
+12. Apagar evento temporário: Esta opção faz com que o evento deixe de agir no mapa.
+13. Evento Comum: Inicia um Evento Comum que você previamente configurou no Database/Banco de Dados (F9).
+14. Label: Serve para você marcar o início de uma sequência de comandos.
+15. Ir para Label: Vá para o Label que anteriormente configurou.
+16. Opções de Switch: Ativa ou desativa uma switch.
+17. Opções de Variável: Aqui você define uma variável.
+18. Controle de Switch local: Ativa ou desativa uma switch local do evento.
+19. Operações de tempo: Serve para iniciar uma contagem regressiva na tela para que aconteça alguma coisa quando ela acabar, ou para parar uma contagem regressiva já iniciada.
+20. Mudar dinheiro: Aumenta ou diminui o dinheiro do personagem.
+21. Mudar Itens: Adiciona ou retira um item do personagem.
+22. Mudar Arma: Adiciona ou retira uma arma do personagem.
+23. Mudar Armadura: Adiciona ou retira uma defesa (elmo, escudo, armadura, acessório) do personagem.
+24. Mudar Grupo: Adiciona ou remove uma pessoa do seu grupo.
+25. Mudar Gráfico do Sistema: Altera a windowskin.
+26. Mudar BGM de batalha: Muda a música que será tocada quando uma batalha começar.
+27. Mudar ME de batalha: Muda o som que dá quando uma batalha termina com vitória sua.
+28. Opção de Save: Permitir ou proibir que o jogador salve o jogo.
+29. Opção de Menu: Permitir ou proibir que o jogador entre no menu.
+30. Opção de Encontros: Permitir ou proibir que o jogador encontre batalhas.

@@ -1,0 +1,32 @@
+Tutorial para Iniciantes - RMXP - Comandos de Eventos
+
+1. Iniciar Batalha: Inicia uma batalha com os monstros que você escolher.
+2. Inserir Loja: Abre uma loja com os itens, armas e armaduras que você decidir vender.
+3. Inserir nome do Herói: Este comando permite ao jogador inserir um nome costumizado para o seu personagem.
+4. Mudar HP: Aumente ou diminua o HP de um certo personagem ou de todo o grupo.
+5. Mudar MP: Aumente ou diminua o MP de um certo personagem ou de todo o grupo.
+6. Mudar Status: Altera o status de um certo personagem ou de todo o grupo, para um status anteriormente configurado no Database/Banco de Dados (F9).
+7. Curar Tudo: Cura completamente todo o grupo ou um personagem específico.
+8. Mudar EXP: Aumenta ou diminui a experiência de um personagem específico ou de todo o grupo.
+9. Mudar Nível: Aumenta ou diminui o nível de um personagem específico ou de todo o grupo.
+10. Mudar Parâmetros: Altera os parâmetros (HP máxima, MP máxima, Força, Destreza, Agilidade, Inteligência) de um personagem ou de todo o grupo.
+11. Mudar Habilidades: Aqui você pode fazer com que um personagem aprenda, ou perca uma habilidade anteriormente configurada no Database/Banco de Dados (F9).
+12. Mudar equipamento: Muda os equipamentos do seu personagem.
+13. Mudar nome do Herói: Altera o nome do Herói para um que você define aqui no evento.
+14. Mudar Classe: Altera a classe do personagem.
+15. Mudar Gráfico do Herói: Altera o character e/ou o battler de um personagem.
+16. Mudar HP do inimigo: Aumente ou diminua a HP de um certo inimigo.
+17. Mudar MP do inimigo: Aumente ou diminua a MP de um certo inimigo.
+18. Mudar Status do inimigo: Altera o status de um certo inimigo para um status anteriormente configurado no Database/Banco de Dados (F9).
+19. Curar Inimigo: Cura completamente um inimigo.
+20. Aparição Inimiga: Faz aparecer um certo grupo de inimigos.
+21. Transformação Inimiga: Aqui você define se o inimigo vai se transformar em outro inimigo, anteriormente configurado no Database/Banco de Dados (F9).
+22. Mostrar animação: Mostra uma animação no inimigo ou no herói.
+23. Receber Dano: Atribua dano (perca de HP) a um personagem ou inimigo.
+24. Forçar Ação: Esta opção força o seu personagem ou um dos inimigos a fazer alguma coisa, seja atacar, fugir, defender ou esperar.
+25. Parar Batalha: Faz parar a batalha em curso, interrompendo-a.
+26. Chamar Menu: Abre o menu, automaticamente.
+27. Chamar Menu de Save: Chama o menu de save, onde você poderá salvar o jogo.
+28. Game Over: Chama a tela de Game Over, ou seja, o jogo acaba.
+29. Voltar à Tela Título: Volta à tela inicial, onde diz: “Novo jogo”, “Continuar” e “Sair”.
+30. Chamar Script: Aqui você coloca comandos em RGSS para fazer qualquer coisa. Para isso você precisa saber programar em RGSS.

@@ -1,0 +1,30 @@
+Tutorial para Iniciantes - RMXP - Comandos de Eventos
+
+1. Teletransporte: Leva o seu personagem para outro mapa, ou para outro local do mesmo mapa.
+2. Posição de evento: Altera a posição de um evento.
+3. Movimento da tela: Movimente a tela, independentemente do local onde o personagem se encontra.
+4. Opções do Mapa: Defina aqui o panorama, a névoa e até mesmo o fundo de batalha que será usado neste mapa.
+5. Tom da Névoa: Altere aqui a cor que a névoa irá ter neste mapa.
+6. Opacidade da Névoa: Altere a transparência da névoa.
+7. Mostrar Animação: Mostra uma animação anteriormente configurada no Database/Banco de Dados (F9), no personagem ou num evento.
+8. Mudar Transparência: Muda a transparência de seu personagem, para ficar totalmente invisível ou voltar ao normal.
+9. Mover Evento: Movimenta o personagem ou um evento sozinho pelo mapa. Para além de o mover, pode fazer muitas outras coisas, como saltar, mudar de direção, mudar de gráfico ou opacidade, etc.
+10. Esperar Fim do Movimento: O evento irá esperar que o comando de “Mover evento” acabe, para que só depois avance para os próximos comandos.
+11. Preparar Transição: Prepara uma transição que ocorrerá.
+12. Executar transição: Executa uma transição.
+13. Cor da Tela: Muda a cor da tela para a cor escolhida.
+14. Efeito Flash: Dá um efeito de Flash na tela com a cor escolhida durante o tempo determinado. Dica: 20 frames = 1 segundo.
+15. Efeito tremor: Treme a tela com a força, velocidade e duração determinadas por você.
+16. Mostrar imagem: Mostra uma imagem na tela de acordo com as coordenadas X e Y que você definir. Dica: X = Horizontal; Y = Vertical.
+17. Mover imagem: Move uma imagem previamente posta na tela, para outra posição.
+18. Girar Imagem: Gira uma imagem previamente posta na tela.
+19. Tonalidade da imagem: Muda a tonalidade da imagem previamente posta na tela.
+20. Deletar Imagem: Apaga uma imagem que esteja na tela.
+21. Opções de Clima: Altera o clima do mapa para: tempo limpo, chuva, tempestade ou neve.
+22. Reproduzir BGM: Reproduz uma música que esteja na pasta BGM.
+23. Parar BGM: Faz parar uma BGM que esteja tocando.
+24. Memorizar BGM / BGS: Memoriza a BGM e a BGS que estão tocando.
+25. Reproduzir Memorizados: Reproduz a BGM e a BGS anteriormente memorizadas.
+26. Reproduzir ME: Reproduz um som que esteja na pasta ME.
+27. Reproduzir SE: Reproduz um som que esteja na pasta SE.
+28. Parar SE: Faz parar uma SE que esteja tocando.

@@ -1,0 +1,37 @@
+Inimigos :
+
+1- Máximo 999 inimigos
+2- Máximo 99 999 atributos
+
+Ghost = Undead01
+Basilisk = Snake01
+Sahagin
+Hellhound
+Cobold
+Cockatrice
+Impressora
+Angel
+Zombie
+Lamia
+Lizardman
+Kerberos
+Goblin
+Harpy
+Gargoyle
+Archangel
+Skeleton
+Hydra
+Kraken
+Griffin
+Orange
+Wyvern
+Daemon
+Cherubim
+Lich
+Quetzalcoati
+Leviathan
+Behemoth
+Troll
+Garuda
+Diabolos
+Seraphim

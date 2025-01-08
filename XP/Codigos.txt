@@ -1,0 +1,30 @@
+Códigos de eventos :
+
+Ativar a alavanca A :
+@>Control Self Switch A =ON
+
+Esperar 60 segundos :
+@>Wait: 60frame(s)
+
+Mostrar escolhas na tela :
+@>Show Choices: Yes, No
+: When[Yes]
+  @>
+: When [No]
+  @>
+: Branch End
+
+Mostrar texto na tela :
+@>Text: Olá
+
+Mostrar texto na tela exibir o nome do 1° personagem :
+@>Text: Olá \n[1]
+
+Mudar os tons da tela pra cor escura depois de 60 segundos :
+@>Change Scren Color Tone (-200,200,-200,0), @60
+
+Pedir pro usuário digitar algo :
+@>Name Input Processing: Aluxes, 6 characters
+
+Tocar efeito de som 066-Animal01 no volume 80 frequência 120 :
+@>PlaySE '066-Animal01', 80, 120

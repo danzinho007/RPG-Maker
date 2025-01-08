@@ -1,0 +1,368 @@
+Scripts :
+
+Arrow_Actor
+Herança: Arrow_Base
+Descrição: Esta classe serve para definir o comportamento do cursor quando aponta para um actor durante a batalha.
+
+Arrow_Base
+Herança: Sprite
+Descrição: Esta classe controla o comportamento do cusror de alvo usado nas batalhas. As classes Arrow_Actor e Arrow_Enemy herdam todas as funcionalidades desta classe.
+
+Arrow_Enemy
+Herança: Arrow_Base
+Descrição: Esta classe define o comportamento do cursor ao apontar para um dos inimigos
+durante a batalha.
+
+Game_Actor
+Herança: Game_Battler
+Descrição: Esta classe define um ator, com todos os elementos e dados típicos tais como o nível, o equipamento, e a progressão da habilidade (Database). Esta classe faz referências às variáveis globais $game_actors e $game_party (variáveis do tipo array ou vetores).
+
+Game_Actors
+Herança: Nenhuma
+Descrição: Esta classe existe meramente para simplificar questões relacionadas à manipulação dos dados da variável global $game_actors (variável do tipo array ou vetor). 
+
+Game_BattleAction
+Herança: Nenhuma
+Descrição: Esta classe descreve propriedades de uma ação da batalha e possui métodos usados
+em determinar a validade e o escopo de uma ação da batalha, além de possuir os métodos que
+decidem qual o último alvo ou qual é o alvo aleatório para ações forçadas durante a batalha.
+Tutorial por Marcelo Cavaco (marcelocavaco@click21.com.br)
+65
+DEGFDEGF Conhecendo Os Scripts RGSS GFDEGFDE
+Game_Battler
+Herança: Nenhuma
+Descrição: Esta classe descreve um "battler", isto é, uma figura de um ator ou de um monstro, e
+tudo que poderia lhe acontecer durante a batalha. Observe que estes objetos do tipo "battler"
+são membros distintos e diferentes da classe actors. Isto torna mais fácil a aplicação de efeitos
+temporários.
+Game_Character
+Herança: Nenhuma
+Descrição: Esta classe determina o comportamento dos “hero sprite” (figuras do herói) e “event
+sprites” (figuras de eventos) no mapa, incluindo o movimento, definindo tipos diferentes de
+movimento para eventos, e garantindo o correto funcionamento do movimento para as rotas
+criadas com o “Define Route” (Definição de Rota) e as rotas criadas com o comando “Move
+Event” (Mover Evento).
+Game_CommonEvent
+Herança: Nenhuma
+Descrição: Esta classe possui métodos e indicadores para trabalharmos com informações de
+eventos comuns, tais como a lista de comandos do evento, seu trigger (gatilho), e seu swtich
+(interruptor do gatilho). Esta classe possui também o código para manter o funcionamento
+eventos comuns que sejam processos paralelos.
+Game_Enemy
+Herança: Game_Battler
+Descrição: Esta classe define um inimigo, contendo seus estados, ações, tesouro e resistências.
+Contem também o código para decidir que ação o monster deve fazer.
+Game_Event
+Herança: Game_Character
+Descrição: Esta classe possui informações sobre um evento do mapa, além de métodos para
+verificar se um evento foi executado.
+Tutorial por Marcelo Cavaco (marcelocavaco@click21.com.br)
+66
+DEGFDEGF Conhecendo Os Scripts RGSS GFDEGFDE
+Game_Map
+Herança: Nenhuma
+Descrição: Esta classe possui informações sobre o mapa atual, incluindo seus tileset, a sua
+passabilidade, névoa, panorama, fundo da batalha e eventos.
+Game_Party
+Herança: Nenhuma
+Descrição: Esta classe possui os métodos que tratam do grupo como um todo, além de métodos
+para tratar cada membro do grupo individualmente. Estes métodos incluem aqueles para ganhar
+ou perder dinheiro, adicionar e remover membros do grupo, e alguns métodos úteis para
+batalhas.
+Game_Picture
+Herança: Nenhuma
+Descrição: Esta classe possui informações sobre uma imagem qualquer e contem métodos para
+mostrar, mover, girar e apagar imagens.
+Game_Player
+Herança: Game_Character
+Descrição: Esta classe calcula a posição relativa do herói em relação ao centro do mapa, evento
+que provoca decisões relativas ao jogador, além de possuir métodos para tratar a contagem de
+passos e a contagem de passos restantes para uma batalha.
+Game_Screen
+Herança: Nenhuma
+Descrição: Esta classe possuiu informações e métodos para controle da tela do jogo, e controle
+do mapa, tal como o tempo se passa, como a tela pisca e como a tela se movimenta (efeito de
+terremoto).
+Tutorial por Marcelo Cavaco (marcelocavaco@click21.com.br)
+67
+DEGFDEGF Conhecendo Os Scripts RGSS GFDEGFDE
+Game_SelfSwitches
+Herança: Nenhuma
+Descrição: Esta classe controla os “Local Switchs” (Interruptores Locais) associados aos eventos
+além de possuir os métodos para ajustar e iniciar os valores dos interruptores locais.
+Game_Switches
+Herança: Nenhuma
+Descrição: Esta classe controla os switchs (interruptores) do jogo e possui métodos para atribuir
+e iniciar os switchs (interruptores).
+Game_System
+Herança: Nenhuma
+Descrição: Esta classe possui informações sobre o sistema de jogo, tal como “battle event
+interpreter”, informações sobre o evento de mapa ou de batalha em execução, a quantidade de
+tempo restante no temporizador, se os menus “saving” (registrar o jogo), “main menu” (menu
+principal) e “encounters” (encontros) estão desabilitados, etc... A maioria dos métodos desta
+classe tratam do processamento dos sons.
+Game_Troop
+Herança: Nenhuma
+Descrição: Esta classe possui informações sobre o grupo de monstros que está em batalha, além
+de possuir métodos para configurar os grupos de monstros e para determinar um alvo aleatório
+para um monstro.
+Game_Variables
+Herança: Nenhuma
+Descrição: Esta classe possui as variáveis do jogo além de ter métodos para atribuir e iniciar os
+dados das variáveis.
+Tutorial por Marcelo Cavaco (marcelocavaco@click21.com.br)
+68
+DEGFDEGF Conhecendo Os Scripts RGSS GFDEGFDE
+Interpreter
+Herança: Nenhuma
+Descrição: Esta classe possui métodos que executam os comandos dos eventos incorporados.
+Cada evento executando representa uma instância desta classe.
+Scene_Battle
+Herança: Nenhuma
+Descrição: Esta é a classe principal do sistema da batalha. Para facilitar o entendimento desta
+classe, o código do sistema da batalha é dividido em Phases (fases). Estas fases são:
+Fase 1: Inicio da fase de batalha;
+Fase 2: Fase de comandos do grupo de heróis;
+Fase 3: Fase de comandos individuais;
+Fase 4: Fase principal;
+Fase 5: Fase da vitória;
+Scene_Debug
+Herança: Nenhuma
+Descrição: Esta classe representa a tela de depuração do jogo que é aberta quando se pressiona
+a tecla F9 durante um “test play” (Teste de Jogo).
+Scene_End
+Herança: Nenhuma
+Descrição: Esta classe controla o menu que aparece quando você seleciona a opção “End Game”
+(Fim de Jogo) do menu principal.
+Scene_Equip
+Herança: Nenhuma
+Descrição: Esta classe controla a tela de equipamentos e todas as janelas contidas nela.
+
+Tutorial por Marcelo Cavaco (marcelocavaco@click21.com.br)
+69
+DEGFDEGF Conhecendo Os Scripts RGSS GFDEGFDE
+Scene_File
+Herança: Nenhuma
+Descrição: Esta classe controla os elementos da seleção de arquivo utilizados ao se registrar
+(save) e carregar (load) um arquivo da memória. Existem duas classes que são heranças desta,
+Scene_Save e Scene_Load, que controlam elemetos específicos do registro (save) e
+carregamento (load) respectivamente.
+Scene_Gameover
+Herança: Nenhuma
+Descrição: Esta classe controla os elementos da tela de fim de jogo (Gameover Screen).
+Scene_Item
+Herança: Nenhuma
+Descrição: Esta classe controla a seleção dos itens de menu do menu principal. Note que um
+processo seperado garante que o menu de itens apareça quando o comando da batalha "item" é
+selecionado.
+Scene_Load
+Herança: Scene_File
+Descrição: Esta classe garante que o processo de seleção de arquivos inicie apenas uma vez o
+arquivo de jogo e da forma correta.
+Scene_Map
+Herança: Nenhuma
+Descrição: Esta classe garante que os elementos relacionados ao mapa como a janela da
+mensagem e a chamada dos vários menus que podem mudar a cena (scene). Além disso, esta
+classe é responsável pelo processamento dos gráficos dos eventos do mapa, que são asegurados
+pela classe de Game_Map e por seus objetos.
+Tutorial por Marcelo Cavaco (marcelocavaco@click21.com.br)
+70
+DEGFDEGF Conhecendo Os Scripts RGSS GFDEGFDE
+Scene_Menu
+Herança: Nenhuma
+Descrição: Esta classe atualiza o menu principal do jogo, processa as entradas do usuário no
+menu de comando e a seleção de personagens do menu de estatísticas.
+Scene_Name
+Herança: Nenhuma
+Descrição: Esta classe controla a tela "Enter Hero Name" (Digitar Nome do Herói). Este tela pode
+ser chamada através dos comandos de eventos.
+Scene_Save
+Herança: Scene_File
+Descrição: Esta classe controla a forma de seleção dos arquivos a serem gravados garantindo
+que seja utilizado apenas um arquivo por vez.
+Scene_Shop
+Herança: Nenhuma
+Descrição: Esta classe controla as telas de lojas e as suas sub-telas, além de responder às
+opções escolhidas pelo usuário.
+Scene_Skill
+Herança: Nenhuma
+Descrição: Esta classe controla as janelas e garante a correta utilização e seleção das habilidades
+dentro do menu principal. Note que a seleção de habilidades na batalha é controlada pela classe
+Scene_Battle.
+Scene_Status
+Herança: Nenhuma
+Descrição: Esta classe possui as janelas de estatísitcas do herói e podem ser acessadas através
+do menu principal do jogo.
+Tutorial por Marcelo Cavaco (marcelocavaco@click21.com.br)
+71
+DEGFDEGF Conhecendo Os Scripts RGSS GFDEGFDE
+
+Scene_Title
+Herança: Nenhuma
+Descrição: Esta classe controla a tela de inicio do jogo.
+Sprite_Battler
+Herança: Sprite
+Descrição: Esta classe proporciona mudanças gráficas nas imagens de batalha, tais como atualizar a tela se a imagem estiver é visível, fazer a tela picar como um flash antes de atacar e mostrar os danos causados durante a batalha.
+
+Sprite_Character
+Herança: Sprite
+Descrição: Esta classe proporciona mudanças gráficas nas imagens do personagem (character),
+tais como atualizar a tela se a imagem estiver visível, fazer a tela picar como um flash antes de
+atacar e mostrar os danos causados durante a batalha.
+
+Sprite_Picture
+Herança: Sprite
+Descrição: Esta classe controla as alterações em imagens durante o jogo.
+
+Sprite_Timer
+Herança: Sprite
+Descrição: Esta classe atualiza o gráfico de tempo.
+
+Spriteset_Battle
+Herança: Nenhuma
+Descrição: Esta classe controla todos os sprites (grupos de imagens) usados na classe de
+Scene_Battle, tal como os inimigos, os atores, o fundo da batalha, e todas as imagens que estão sendo mostradas.
+
+Spriteset_Map
+Herança: Nenhuma
+Descrição: Esta classe contem os sprites (grupo de imagens) usados na classe Scene_Map, tal como o tileset, o panorama, a névoa, o tempo e as figuras.
+
+Window_Base
+Herança: Window
+Descrição: Esta é a classe principal das janelas. Todas as outras classes de janela herdam desta
+classe. Ela possui métodos úteis que podem ser chamads em diversas janelas. Se você deseja
+adicionar um método que você irá usar em muitas janelas durante todo o seu jogo, você deve
+adicionr este método nesta classe.
+Window_BattleResult
+Herança: Window_Base
+Descrição: Esta é a classe da janela que aparece quando você vence uma batalha. Ela mostra a
+quantidade de experiência e dinheiro adquirido. Em alguns casos itens são deixados pelos
+monstros. Estes istens são mostrados nesta tela também.
+
+Window_BattleStatus
+Herança: Window_Base
+Descrição: Esta é a classe da janela que mostra os pontos de vida (HP), os pontos de habilidade
+(SP) e o estado dos heróis durante a batalha.
+Window_Command
+Herança: Window_Selectable
+Descrição: Esta janela mostra uma lista de comandos. Ao contrário das outras classes que
+herdam de Window_Base, esta herda de Window_Selectable e é projetada para ser o mais
+flexível possível, permitindo que uma janela seja construída fácilmente toda vez que você quiser
+que o jogador escolha uma opção entre vários comandos disponíveis.
+Tutorial por Marcelo Cavaco (marcelocavaco@click21.com.br)
+73
+DEGFDEGF Conhecendo Os Scripts RGSS GFDEGFDE
+Window_DebugLeft
+Herança: Window_Selectable
+Descrição: Esta janela mostra grupos de dez swtichs e variables (interruptores e variáveis) que o
+usuário pode escolher e modificar durante o teste de seu projeto. Quando o usuário escolhe um
+grupo do lado esquerdo na tela, o lado direito da tela mostra dez switchs ou variable
+(interruptores ou variáveis) individuais para serem modificados.
+Window_DebugRight
+Herança: Window_Selectable
+Descrição: Esta janela mostra dez switchs ou variable (interruptores ou variáveis) individuais
+dependendo do grupo escolhido no lado esquerdo da tela. Pressionando a tecla [Enter] é possível
+alterar o valor dos switchs (interruptores), além de diversas operações com variable (variáveis)
+estarem disponíveis.
+Window_Gold
+Herança: Window_Base
+Descrição: Esta janela mostra a quantidade ouro disponível naquele momento. Esta tela é
+apresentada no menu, nas lojas e quando o comando "\g" é utilizado nas mensagens de texto.
+Window_Help
+Herança: Window_Base
+Descrição: Esta tela é apresentada em várias situaçãoes diferentes, como na tela de itens, na
+tela de habilidades, equipamentos, dentre outros. Serve para apresentar um texto descritivo
+sobre uma determinada situação. Na batalha serve para mostrar os nomes dos personagens e
+dos inimigos.
+Window_InputNumber
+Herança: Window_Base
+Descrição: Esta é a janela para entrada de números. Ela é apresentada quando o comando de
+evento "Input Number" (Entrar/Digitar Número) é utilizado.
+Tutorial por Marcelo Cavaco (marcelocavaco@click21.com.br)
+74
+DEGFDEGF Conhecendo Os Scripts RGSS GFDEGFDE
+Window_Item
+Herança: Window_Selectable
+Descrição: Esta janela mostra a lista de itens do grupo de personagens. É apresentada toda vez
+que a opção Item (itens) do menu principal é selecionada.
+Window_MenuStatus
+Herança: Window_Selectable
+Descrição: Esta janela mostra o nome, o nível, os pontos de vida (HP), os pontos de habilidade
+(SP), e o estado de cada personagem do grupo. Esta janela herda de Window_Selectable e não
+de Window_Base pois determinados comandos de menu requerem que uma opção esteja
+selecionada.
+Window_Message
+Herança: Window_Selectable
+Descrição: Esta é a janela principal de mensagens mostrada quando o comando de evento "Show
+Message" (Mostrar Mensagem) é usado.
+Window_NameEdit
+Herança: Window_Base
+Descrição: Esta janela mostra o nome original do jogador, enquanto possibilita a alteração do
+nome antigo através da escolha de um novo nome. Os novos nomes devem ser predefinidos e o
+jogador não pode criar um novo.
+Window_NameInput
+Herança: Window_Base
+Descrição: Esta janela é a janela onde o jogador realmente cria um novo nome. Não precisa ser
+um nome pré-determinado. O jogador escolhe as letras para o nome da maneira que quiser.
+Window_PartyCommand
+Herança: Window_Selectable
+Descrição: Esta janela mostra as opções Fight (Lutar) ou Flee (Fugir) no inicio de cada turno.
+Tutorial por Marcelo Cavaco (marcelocavaco@click21.com.br)
+75
+DEGFDEGF Conhecendo Os Scripts RGSS GFDEGFDE
+Window_PlayTime
+Herança: Window_Base
+Descrição: Esta janela mostra quanto tempo de jogo já se passou no menu principal do jogo.
+Window_SaveFile
+Herança: Window_Base
+Descrição: Esta janela mostra o estado de um arquivo salvo individualmente nas cenas
+scene_save ou scene_load.
+Window_Selectable
+Herança: Window_Base
+Descrição: Esta é a classe básica para a maioria das janelas que permitem que você selecione
+alguma opção na tela. É bastante flexível, a ponto de aceitar opções divididas em linhas e/ou em
+colunas.
+Window_ShopBuy
+Herança: Window_Selectable
+Descrição: Esta janela mostra os itens disponíveis para serem comprados quando é selecionada a
+opção Buy (compra) na tela principal das lojas, ou seja, na tela Window_ShopCommand.
+Window_ShopCommand
+Herança: Window_Selectable
+Descrição: Esta janela mostra as opções Buy (Comprar), Sell (Vender), and Exit (Sair) quando
+uma tela de loja é aberta.
+Window_ShopNumber
+Herança: Window_ShopNumber
+Descrição: Esta tela aparece quando um item é comprado ou vendido, para que possamos indicar
+a quantidade de itens que desejamos.
+
+Window_ShopSell
+Herança: Window_Selectable
+Descrição: Esta tela mostra os itens disponíveis que podem ser vendidos quando é selecionada a
+opção Sell (venda) na tela principal das lojas, ou seja, na tela Window_ShopCommand.
+Window_ShopStatus
+Herança: Window_Base
+Descrição: Quando é selecionado um item para comprar numa loja, esta tela mostra a
+quantidade disponível deste mesmo item no inventário do grupo. Ela mostra também a mudança
+de poder ou defesa (dependendo do item) para cada personagem que pode utilizar aquele item.
+Window_Skill
+Herança: Window_Selectable
+Descrição: Esta janela mostra a lista de habilidades do personagem e pode ser usado no menu ou
+durante uma batalha.
+Window_SkillStatus
+Herança: Window_Base
+Descrição: Esta janela aparece em cima da janela de seleção de habilidades. Ela mostra o nome,
+o estado, os pontos de vida (HP) e os ponstos de habilidade SP do personagem usando esta
+habilidade.
+Window_Status
+Herança: Window_Base
+Descrição: Esta habilidade mostra o estado do personagem no menu principal.
+Window_Steps
+Herança: Window_Base
+Descrição: Esta janela mostra no menu principal quantos passos foram dados pelos heróis.
+Tutorial por Marcelo Cavaco (marcelocavaco@click21.com.br)
+77
+DEGFDEGF Conhecendo Os Scripts RGSS GFDEGFDE
+
+Window_Target
+Herança: Window_Selectable
+Descrição: Esta tela é apresentada quando um item ou habilidade precisa de um alvo. Esta tela não é utilizada durante uma batalha.

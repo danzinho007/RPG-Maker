@@ -1,0 +1,13 @@
+Atalhos :
+
+F9 = Editor
+F11 = Editor de scripts
+F12 = Rodas o jogo
+
+CTRL + C = Copiar
+CTRL + O = Abre o projeto ( formato .rxproj )
+CTRL + S = Salvar jogo
+CTRL + V = Colar
+CTRL + X = Recortar
+
+Del = Deleta
