@@ -1,0 +1,40 @@
+Vídeo 16 Hash ( Aula 27 ) 
+
+# Hash 
+# Coleção de chaves e seus valores
+# Chamada de Objeto em outras linguagens
+# Você pode criar keys depois de ter criado o hash
+
+hash = {}
+
+# Hash vs Array
+# Para acessar um conteúdeo de um array é necessário utilizar o index do conteúdo 
+# Para acessar um conteúdeo de um hash, utiliza-se chaves ( keys ) 
+
+# Criando um hash, atribuíndo uma chave e o valor nela :
+
+hash = {
+    :name => "Adam"
+}
+p hash[:name]
+
+# Criando mais de um conteúdo no hash :
+
+hash = {
+    :name => "Adam"
+    :age => 18
+}
+p hash[:name]
+p hash[:age]
+
+# Criando o hash e em seguida adicionando as keys :
+# hash[key] = value
+
+hash = {}
+hash[:name] = "Adam"
+hash[:age] = 18
+
+p hash[:name]
+p hash[:age]
+
+

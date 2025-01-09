@@ -251,11 +251,23 @@ p array[0] # "Dez"
 
 Outros :
 
+https://centrorpg.com/index.php?topic=2075.0
+
 https://depositodesistemasml.blogspot.com/2013/12/o-rpgmaker-testes-e-editor-de-scripts.html
+
+https://forums.rpgmakerweb.com/index.php?forums/learning-ruby-and-rgssx.33/page-41
 
 https://makerpedia.fandom.com/pt-br/wiki/Ruby_Game_Scripting_System
 
+https://rmrk.net/index.php?PHPSESSID=pl09l7jr35atu7caec6p53ug1r&topic=43380.0
+
+https://www.rpg-maker.fr/dl/monos/aide/xp/index.html?page=source%2Frgss%2Frgss.html
+
 https://rpgm.fandom.com/wiki/Ruby_Game_Scripting_System
+
+https://www.rpgmaker.net/articles/1351/
+
+https://www.sergiotoledo.com.br/videos/tutorial-ruby-aula-1:-criando-um-jogo
 
 https://www.youtube.com/watch?v=scO0nHl3gK4
 

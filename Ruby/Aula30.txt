@@ -1,0 +1,9 @@
+Vídeo 17 Eval Aula 30
+
+# Eval
+# É um método
+# Transformar um texto em código real
+# Batalha padrão do RPG Maker ( a.attak * 4 - b.def * 2 ) é um eval
+ 
+code = "p \"Hello\""
+eval(code)

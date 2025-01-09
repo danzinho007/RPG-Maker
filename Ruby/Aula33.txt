@@ -1,0 +1,41 @@
+Vídeo 18 Sprites e Bitmaps
+
+# Mostrar imagem na tela precisa de 2 classes : Sprite e Bitmap 
+
+# Sprite
+# Classe pra mostrar imagem na tela
+# Bitmap
+# Classe da própria imagem
+
+# Sprites e Bitmaps 
+# Usando a tela de título :
+
+class Scene_Title < Scene_Base
+    alias :test_start :start 
+    def start
+        test_start
+        @my_sprite = Sprite.new 
+        @my_sprite.bitmap = Bitmap.new("Graphics/Pictures/Blanc")
+        @my_sprite.z = 300
+        @my_sprite.x = 200
+        @my_sprite.y = 20
+    end
+end
+
+# Obs :
+# # Criando uma sprite usando variável de instância :
+#  @my_sprite = Sprite.new 
+# Variáveis locais só duram onde foram criadas
+# Indicando onde o sprite do bitmap está ::
+# @my_sprite.bitmap = Bitmap.new("Graphics/Pictures/Blanc")
+# ou 
+# @my_sprite.bitmap = Cache.picture("Blanc")
+# O quão próximo da tela está a imagem :
+# @my_sprite.z = 300
+# Quanto maior o z, mais acima a imagem está sobre a outra
+# Colocanso só isso, a imagem irá ficar a esquerda do menu 
+
+# Posição x ( horizontal ) e y ( vertical ) do sprite :
+# @my_sprite.x = 200
+# @my_sprite.y = 20
+# Colocando isso, a imagem estará a direita do menu 

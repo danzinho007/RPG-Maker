@@ -1,0 +1,80 @@
+Vídeo 19 Áudio 
+
+# Áudio
+
+class Scene_Title < Scene_Base
+    alias :test_start :start
+    def start
+        test_start
+    end
+    alias :test_update :update 
+    def update
+        test_update
+        if Input.trigger?(:RIGHT)
+            RPG::BGM.new("Battle1",100,100).play
+    end
+end
+
+# Criando uma condição para saber se o botão direito foi apertado :
+# if Input.trigger?(:RIGHT)
+# Caso seja apertado, irá reproduzir um som 
+
+# Reproduzir BGM :
+# RPG::BGM.new("Nome",volume,tom).play
+# Valor mínimo do tom ( pitch ) é 50, porém no script pode colocar 0 
+
+# Guardando música numa variável :
+
+class Scene_Title < Scene_Base
+    alias :test_start :start
+    def start
+        test_start
+        @audio = [RPG::BGM.new("Battle1",100,100), RPG::BMG.new("Battle2",100,100)]
+    end
+    alias :test_update :update
+    def update
+        test_update
+        if Input.trigger?(:RIGHT)
+            @audio[0].play
+        elsif Input.trigger?(:LEFT)
+            @audio[1].play
+        end
+    end
+end
+# Se apertar pra direita, vai reproduzir Battle1 
+# Se apertar pra esquerda, vai reproduzir Battle2
+
+# Reproduzir uma BGS ( BackGroundSound / Música de fundo ) :
+
+class Scene_Title < Scene_Base
+    alias :test_start :start
+    def start
+        test_start
+    end
+    alias :test_update :update
+    def update
+        test_update
+        if Input.trigger?(:RIGHT)
+            RPG::BGS.new("Wind",100,100).play
+        end
+    end
+end
+# O mesmo vale para RPG::ME ou RPG::SE
+
+# Parar uma música usando stop :
+
+class Scene_Title < Scene_Base
+    alias :test_start :start
+    def start
+        test_start
+    end
+    alias :test_update :update
+    def update
+        test_update
+        if Input.trigger?(:RIGHT)
+            RPG::BMG.stop
+        end
+    end
+end
+
+https://www.youtube.com/watch?v=y7ZUy4CGhsk

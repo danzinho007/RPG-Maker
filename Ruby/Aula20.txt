@@ -1,0 +1,75 @@
+Aula 20 ( Vídeo 14 ) Loops
+
+# Loop
+# Código que irá se repetir até que você mande ele parar 
+
+# Exemplo 01 :
+
+loop do
+    p "updating"
+end
+
+# Exemplo 02 :
+
+number = 0
+loop do
+    number += 1
+    p number
+end
+
+# Exemplo 03 :
+# Usando break pro loop terminar e prosseguir com o resto do código
+
+number = 0
+loop do
+    number += 1
+    p number
+    break if number > 100
+end
+
+# Exemplo 04 :
+# O loop irá repetir 100x e depois irá terminar 
+
+number = 10
+100.times do
+    number += 1
+    p number
+end
+
+# Exemplo 05 :
+# Loop until se baseira em uma condição
+# Se o número for maior que 100, ele irá se repetir
+
+number = 10
+until number > 100
+    number += 1
+    p number
+end
+
+# Exemplo 06
+# É o 05 mais curto 
+
+number = 10
+number == 1 until number > 100
+p number
+
+# Exemplo 07 :
+# Loop for usada em arrays
+# Irá se repetir para cada item que tiver dentro daquele array 
+
+array = ["Olá","Hi","Holla"]
+for item in array
+    p item
+end
+
+# Exemplo 08 :
+# Outra forma de usar o loop for
+# Irá se repetir de 0 a 100
+
+for number in 0..100
+    p number
+end
+# Se for 2 pontos ( 0..100 ) vai até 100
+# Se for 3 pontos ( 0...100 ) vai ate 99
+
+# Exemplo 09 :

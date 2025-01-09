@@ -1,0 +1,110 @@
+Audio
+
+Speficiations
+RPG : AudioFile
+Module 
+
+You have five different file formats at your disposal: MID (in BGM and ME only), OGG, WMA, MP3, and WAV.
+
+BGM (Audio/BGM)
+Background music--usually in MID format.
+
+BGS (Audio/BGS)
+Background sounds--usually in OGG format.
+
+ME (Audio/ME)
+Music effects--usually in MID format.
+
+SE (Audio/SE)
+Sound effects--usually in OGG format.
+
+Here are the special features of each file format:
+
+MID	MIDI files played via the DirectMusic Synthesizer. If a BGM MIDI file contains the control change value 111, that value is recognized as where the song will start repeating after it reaches the end.
+OGG	Files containing compressed Ogg Vorbis data, known for its sound quality and compression rate. However, since RPG Maker XP doesn't support OGG streaming, the entire file must be loaded before it can be played, making it unsuitable for longer pieces.
+WMA	Compressed Windows Media Player sound files, played via DirectShow. Unlike the OGG format, streaming (loading data while playing it in real time) is supported, so it's good for longer-playing songs.
+MP3	An extremely popular compressed sound format, played via DirectShow. It has the same special traits as the WMA format.
+WAV	The standard Windows sound format. RPG Maker XP can process both standard uncompressed WAVs and Microsoft ADPCM files.
+
+RPG::AudioFile
+Data class for audio files. Common to all formats (BGM, BGS, ME, SE).
+
+Superclass
+Object
+Referrers
+RPG::Map
+RPG::Skill
+RPG::Item
+RPG::Animation::Timing
+RPG::System
+Attributes
+name
+The sound file name.
+
+volume
+The sound's volume (0..100). The default values are 100 for BGM and ME and 80 for BGS and SE.
+
+pitch
+The sound's pitch (50..150). The default value is 100.
+
+Definition
+module RPG
+  class AudioFile
+    def initialize(name = "", volume = 100, pitch = 100)
+      @name = name
+      @volume = volume
+      @pitch = pitch
+    end
+    attr_accessor :name
+    attr_accessor :volume
+    attr_accessor :pitch
+  end
+end
+
+Module
+The module that carries out music and sound processing.
+
+Module Methods
+Audio.bgm_play(filename[, volume[, pitch]])
+Starts BGM playback. Sets the file name, volume, and pitch in turn.
+
+Also automatically searches files included in RGSS-RTP. File extensions may be omitted.
+
+Audio.bgm_stop
+Stops BGM playback.
+
+Audio.bgm_fade(time)
+Starts BGM fadeout. time is the length of the fadeout in milliseconds.
+
+Audio.bgs_play(filename[, volume[, pitch]])
+Starts BGS playback. Sets the file name, volume, and pitch in turn.
+
+Also automatically searches files included in RGSS-RTP. File extensions may be omitted.
+
+Audio.bgs_stop
+Stops BGS playback.
+
+Audio.bgs_fade(time)
+Starts BGS fadeout. time is the length of the fadeout in milliseconds.
+
+Audio.me_play(filename[, volume[, pitch]])
+Starts ME playback. Sets the file name, volume, and pitch in turn.
+
+Also automatically searches files included in RGSS-RTP. File extensions may be omitted.
+
+Audio.me_stop
+Stops ME playback.
+
+Audio.me_fade(time)
+Starts ME fadeout. time is the length of the fadeout in milliseconds.
+
+Audio.se_play(filename[, volume[, pitch]])
+Starts SE playback. Sets the file name, volume, and pitch in turn.
+
+Also automatically searches files included in RGSS-RTP. File extensions may be omitted.
+
+When attempting to play the same SE more than once in a very short period, they will automatically be filtered to prevent choppy playback.
+
+Audio.se_stop
+Stops SE playback.
+

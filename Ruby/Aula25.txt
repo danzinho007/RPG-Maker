@@ -1,0 +1,57 @@
+Vídeo 15 Módulos ( Aula 25 )
+
+# Módulos
+# Classe que sempre será iniciada automaticamente
+# Módulo deve começar com letra Maiúscula
+# Geralmente constantes e métodos ficando dentro de seus módulos
+# Classe também podem ficar dentro de um módulo
+
+module My_Module
+    HERO_NAMES = ["Adam","Isabelle","Ralph"]
+end
+
+# Como acessar a constante HERO_NAMES dentro do módulo ?
+# Nome_Do_Modulo::Constante
+
+p My_Module::HERO_NAMES
+
+# Como criar um método dentro do módulo ?
+# Basta colocar self antes do nome do método 
+
+module My_Module
+    HERO_NAMES = ["Adam","Isabelle","Ralph"]
+
+    def self.first_hero
+        return HERO_NAMES[0]
+    end
+end
+p My_Module.first_hero
+
+# Colocando um módulo dentro de um módulo e acessando ele :
+
+module My_Module
+    module Second_Module
+        TEXT = "Hello there!"
+    end
+end
+p My_Module::Second_Module::TEXT
+
+# Colocando classe dentro do módulo e acessando ela :
+
+module My_Module
+    class Hero
+        def initialize
+            p "Hello there"
+        end
+    end
+end
+My_Module::Hero.new
+
+---------------------------
+
+variavel_normal = 10
+CONSTANTE = 20
+Constante = 30
+
+# Não pode modificar o valor de uma constante !!!
+# Constante sempre começa com letra Maiúscula 

@@ -111,10 +111,12 @@ class Scene_Title < Scene_Base
     end
 end
 
+---------------------
 Aula 14 : Attr ( Vídeo 13 )
 
 Attr
 Maneira de acessar uma propriedade de uma classe externamente
+Só leitura, não pode alterar dados
 
 # Criando uma classe, dentro dela colocando uma variável de instância usando array :
 
@@ -138,10 +140,54 @@ p pessoa.idade  # Saída : 30
 Exemplo 02 :
 pessoa = Pessoa.new("Maria", 30)
 
-ckass Bread
+class Bread
     attr_reader = ingredients
     def initialize
         @ingredients = ["Flour","Water"]
     end
 end
+
+# Acessando a variável ingredients externamente, como se fosse um método de classe :
+item = Bread.new
+p item ingredients
+
+# att_writter
+# Funcionar de maneira contrária o reader, aqui somente pode alterar dados, jamais ler
+
+class Bread
+    att_writter : ingredients
+
+    def initialize
+        @ingredients = ["Flour","Water"]
+    end
+    def show_ingredients
+        p @ingredients
+    end
+
+end
+
+# Alterando os dados do valor de ingredients : 
+
+item = Bread.new
+item ingredients = 10
+item.show_ingredients
+
+# attt_acessor
+# Permite ler e alterar
+
+class Bread
+    attr_acessor : ingredients
+
+    def initialize
+        @ingredients = ["Flour","Water"]
+    end
+
+end
+
+# Lendo o ingredients e depois alterando ele :
+
+item = Bread.new
+p item.ingredients
+item.ingredients = 10
+p item.ingredients
 

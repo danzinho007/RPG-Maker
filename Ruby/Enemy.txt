@@ -1,0 +1,214 @@
+Enemy :
+RPG::Enemy
+RPG::Enemy::Action
+
+
+RPG::Enemy
+Data class for enemies.
+
+Superclass
+Object
+Attributes
+id
+The enemy ID.
+
+name
+The enemy name.
+
+battler_name
+The enemy's battler graphic file name.
+
+battler_hue
+The adjustment value for the battler graphic's hue (0..360).
+
+maxhp
+The enemy's max HP.
+
+maxsp
+The enemy's max SP.
+
+str
+The enemy's strength.
+
+dex
+The enemy's dexterity.
+
+agi
+The enemy's agility.
+
+int
+The enemy's intelligence.
+
+atk
+The enemy's attack power.
+
+pdef
+The enemy's physical defense rating.
+
+mdef
+The enemy's magic defense rating.
+
+eva
+The enemy's evasion rating.
+
+animation1_id
+The battle animation ID.
+
+animation2_id
+The target animation ID.
+
+element_ranks
+Level of elemental effectiveness. 1-dimensional array using element IDs as subscripts (Table), with 6 levels (0: A, 1: B, 2: C, 3: D, 4: E, 5: F).
+
+state_ranks
+Level of status effectiveness. 1-dimensional array using status IDs as subscripts (Table), with 6 levels (0: A, 1: B, 2: C, 3: D, 4: E, 5: F).
+
+actions
+The enemy's actions. An RPG::Enemy::Action array.
+
+exp
+The enemy's experience.
+
+gold
+The enemy's gold.
+
+item_id
+The ID of the item used as treasure.
+
+weapon_id
+The ID of the weapon used as treasure.
+
+armor_id
+The ID of the armor used as treasure.
+
+treasure_prob
+The probability of treasure being left behind.
+
+Inner Class
+RPG::Enemy::Action
+Definition
+module RPG
+  class Enemy
+    def initialize
+      @id = 0
+      @name = ""
+      @battler_name = ""
+      @battler_hue = 0
+      @maxhp = 500
+      @maxsp = 500
+      @str = 50
+      @dex = 50
+      @agi = 50
+      @int = 50
+      @atk = 100
+      @pdef = 100
+      @mdef = 100
+      @eva = 0
+      @animation1_id = 0
+      @animation2_id = 0
+      @element_ranks = Table.new(1)
+      @state_ranks = Table.new(1)
+      @actions = [RPG::Enemy::Action.new]
+      @exp = 0
+      @gold = 0
+      @item_id = 0
+      @weapon_id = 0
+      @armor_id = 0
+      @treasure_prob = 100
+    end
+    attr_accessor :id
+    attr_accessor :name
+    attr_accessor :battler_name
+    attr_accessor :battler_hue
+    attr_accessor :maxhp
+    attr_accessor :maxsp
+    attr_accessor :str
+    attr_accessor :dex
+    attr_accessor :agi
+    attr_accessor :int
+    attr_accessor :atk
+    attr_accessor :pdef
+    attr_accessor :mdef
+    attr_accessor :eva
+    attr_accessor :animation1_id
+    attr_accessor :animation2_id
+    attr_accessor :element_ranks
+    attr_accessor :state_ranks
+    attr_accessor :actions
+    attr_accessor :exp
+    attr_accessor :gold
+    attr_accessor :item_id
+    attr_accessor :weapon_id
+    attr_accessor :armor_id
+    attr_accessor :treasure_prob
+  end
+end
+
+RPG::Enemy::Action
+Data class for enemy [Actions].
+
+Superclass
+Object
+Referrer
+RPG::Enemy
+Attributes
+kind
+Type of action (0: basic, 1: skill).
+
+basic
+When set to a [Basic] action, defines it further (0: attack, 1: defend, 2: escape, 3: do nothing).
+
+skill_id
+When set to a [Skill], the ID of that skill.
+
+condition_turn_a
+condition_turn_b
+a and b values specified in the [Turn] condition. To be input in the form a + bx.
+
+When the turn is not specified as a condition, a = 0 and b = 1.
+
+condition_hp
+Percentage specified in the [HP] condition.
+
+When HP is not specified as a condition, this value is set to 100.
+
+condition_level
+Standard level specified in the [Level] condition.
+
+When the level is not specified as a condition, this value is set to 1.
+
+condition_switch_id
+Switch ID specified in the [Switch] condition.
+
+When the switch ID is not specified as a condition, this value is set to 0. Consequently, it is essential to check whether this value is 0.
+
+rating
+The action's rating (1..10).
+
+Definition
+module RPG
+  class Enemy
+    class Action
+      def initialize
+        @kind = 0
+        @basic = 0
+        @skill_id = 1
+        @condition_turn_a = 0
+        @condition_turn_b = 1
+        @condition_hp = 100
+        @condition_level = 1
+        @condition_switch_id = 0
+        @rating = 5
+      end
+      attr_accessor :kind
+      attr_accessor :basic
+      attr_accessor :skill_id
+      attr_accessor :condition_turn_a
+      attr_accessor :condition_turn_b
+      attr_accessor :condition_hp
+      attr_accessor :condition_level
+      attr_accessor :condition_switch_id
+      attr_accessor :rating
+    end
+  end
+end
