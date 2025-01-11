@@ -1,0 +1,44 @@
+Controles do jogo
+Controles básicos
+Propriedades do jogo
+Outros controles
+Controles básicos
+Jogos RPGXP usam controles de estilo gamepad de 8 botões.
+
+Por padrão, cada botão (A, B, C, X, Y, Z, L, R) corresponde ao comando a seguir. Alguns botões do gamepad podem já estar rotulados com algumas dessas letras, tornando os controles ainda mais fáceis de entender.
+
+Botão Gamepad Teclado Função principal
+A Botão 1 Shift, Z -
+B Botão 2 Esc, Num 0, X Cancelar, Menu
+C Botão 3 Espaço, Enter, C Botão de ação
+X Botão 4 A -
+Y Botão 5 S -
+Z Botão 6 D -
+L Botão 7 Q, Page Up Página anterior
+R Botão 8 W, Page Down Próxima página
+As "Funções principais" acima são os controles padrão do jogo. Os botões podem receber controles especiais em alguns jogos.
+
+Mova os personagens e cursores do jogo usando os botões direcionais do gamepad ou as teclas de seta do teclado.
+
+Propriedades do jogo
+Propriedades do jogo
+Pressione F1 enquanto um jogo estiver em execução para exibir esta janela. Aqui você pode personalizar o layout dos botões para o gamepad e o teclado. Pressione [Redefinir] para reverter para as configurações padrão.
+
+As seguintes configurações estão disponíveis na guia [Geral]:
+
+Modo suave
+Os jogos geralmente rodam a 20 quadros por segundo, mas se o seu sistema atende ou excede a configuração recomendada, você pode aproveitar uma taxa de quadros de 40 fps.
+Reduzir cintilação da tela
+Você pode ajustar o intervalo de apagamento vertical para reduzir a cintilação sutil vista ao redesenhar a tela. No entanto, isso pode tornar o processo de redesenho mais lento. Seus gostos pessoais e ambiente de computação ajudarão você a decidir se deve ativar ou desativar esta configuração.
+Reproduzir BGM e ME
+Liga e desliga a música do jogo. Você também pode silenciar todos os sons, perfeito para ouvir outras músicas durante o teste de jogo.
+Reproduzir BGS e SE
+Liga e desliga os efeitos sonoros.
+Outros controles
+Função da tecla
+Alt+Enter Alterna entre o modo janela e o modo tela cheia.
+Alt+F4 Sai do jogo (força o encerramento).
+F12 Retorna à tela de título.
+F2 Ao testar o jogo, mostra o fps (quadro por segundo) na barra de título.
+F9 Ao testar o jogo, pressione esta tecla enquanto estiver no mapa, mas não em um evento, para chamar a tela de depuração (uma lista de interruptores e variáveis).
+Ctrl Ao testar o jogo, segure esta tecla enquanto se move para desabilitar encontros aleatórios e viajar por blocos intransponíveis.

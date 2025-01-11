@@ -1,0 +1,47 @@
+Vídeo 21 Janelas 
+https://www.youtube.com/watch?v=AtoxvCgg-8Y
+
+# Janela 
+# É uma classe
+# Serve pra mostrar informações
+
+# Criando uma classe chamada Tutorial que herda a Scene_Base e Criando a classe da janela  que herda da Window_Base :
+
+class Tutorial < Scene_Base
+    def start
+        super
+        @my_window = My_Window.new(12,12,120,120)
+        @my_window.draw_text_ex(0,0,"Master Spark!")
+    end
+    def update
+        super
+        if Input.trigger(:RIGHT)
+        @my_window.contents.clear
+        @my_window.draw_text_ex(0,0,"Play with me, Marisa!")
+    end
+end
+
+class My_Window < Window_Base
+    def initialize(x,y,width,height)
+        super
+    end
+end
+
+# Argumentos do initialize :
+# x = posição horizontal
+# y = posição vertical
+# width = largura da janela
+# height = altura da janela 
+# Mostrar janela :
+# Cria uma variável para segurar a janela e associa a classe a variável
+# Ao colocar 12,12,120,120 irá amostrar no canto superior esquerdo com tamanho 120x120
+# Desenhar texto numa janela :
+# método draw_text_ex
+# Sintaxe : janela.draw_text_ex(x,y,texto)
+# x e y são as coordenas do texto dentro da janela
+# Fazer com que o texte mude ao pressionar uma tela :
+# Se o botão for pressionado (botão)
+# @my_window.draw_text_ex(x,y,texto)
+# Limpar conteúdo da janela : 
+# janela.contents.clear
+# Isso irá limpar tudo o que foi desenhado anteriormente na janela

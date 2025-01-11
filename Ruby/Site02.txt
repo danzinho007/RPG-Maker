@@ -1,0 +1,19 @@
+System Requirements
+RPGXP's system requirements are as follows:
+
+Minimum System Requirements
+Operating system	Microsoft® Windows® 98/98SE/Me/2000/XP
+Processor	PC with 800MHz Intel® Pentium® III or higher
+RAM	At least 128 MB
+Video adapter	1024x768 or better video resolution in High Color mode
+Sound card	DirectSound-compatible sound card
+Free hard disk space	At least 100 MB
+* These specifications may not be sufficient to play some games comfortably.
+
+Recommended System Requirements
+Operating system	Microsoft® Windows® XP
+Processor	PC with 1.5GHz Intel® Pentium® 4 equivalent or higher processor
+RAM	At least 256 MB
+Video adapter	1024×768 or better video resolution in True Color mode
+Sound card	DirectSound-compatible sound card
+Free hard disk space	At least 500MB

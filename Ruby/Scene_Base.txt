@@ -1,0 +1,160 @@
+#:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
+# ■ Scene_Base [RMXP]
+# ■ Author: Bigace360
+# ■ Date: Feb 20, 2012
+# ■ Version: 1.5
+#:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
+#   This script was designed to act as a parent class for all scenes. It
+#   provides 2 major purposes :
+#
+#    1) Give the Main Processing Method a Common Structure
+#    2) Automatically Update & Dispose All Spritesets, Sprites, Windows or
+#       any other instance variable that responds to :update or :dispose
+#
+#   This is a script for developers, not non-scripters. If you do not
+#   plan to create scenes in RMXP, this isn't needed.
+#:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
+# ■ Version History
+# 02.20.2012 < v1.0 >
+# 02.05.2013 < v1.3 >
+# 02.16.2013 < v1.4 >
+# 05.20.2013 < v1.5 >
+#:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:
+#                         ▼ Import to Global Hash ▼                            #
+($ace_script ||= {})[:scene_base] = 1.5
+#:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:
+module ACE
+ module SceneManager
+  @background_bitmap = nil                # background bitmap
+  def self.background_bitmap
+   @background_bitmap
+  end
+ end
+end
+class Scene_Base
+ #--------------------------------------------------------------------------
+ # * Main Processing
+ #--------------------------------------------------------------------------
+ def main
+  start                                  # Start processing
+  post_start                             # Post-start processing
+  update until main_break?               # Scene Loop
+  move_windows                           # Move windows process
+  Graphics.update                        # Update game screen
+  pre_terminate                          # Pre-termination processing
+  terminate                              # Termination processing
+ end
+ #--------------------------------------------------------------------------
+ # * Start processing
+ #--------------------------------------------------------------------------
+ def start; end
+ #--------------------------------------------------------------------------
+ # * Post-Start Processing
+ #--------------------------------------------------------------------------
+ def post_start
+  perform_transition
+  Input.update
+ end
+ #--------------------------------------------------------------------------
+ # * Execute Transition
+ #--------------------------------------------------------------------------
+ def perform_transition
+  Graphics.transition(transition_speed)
+ end
+ #--------------------------------------------------------------------------
+ # * Get Transition Speed
+ #--------------------------------------------------------------------------
+ def transition_speed
+  return 10
+ end
+ #--------------------------------------------------------------------------
+ # * Frame Update
+ #--------------------------------------------------------------------------
+ def update
+  main_loop
+ end
+ #--------------------------------------------------------------------------
+ # * Main Processing : Loop
+ #--------------------------------------------------------------------------
+ def main_loop
+  Graphics.update
+  Input.update
+  update_all_windows
+ end
+ #--------------------------------------------------------------------------
+ # * Main Processing : Break Loop Test
+ #--------------------------------------------------------------------------
+ def main_break?
+  return $scene != self
+ end
+ #--------------------------------------------------------------------------
+ # * Move windows process
+ #--------------------------------------------------------------------------  
+ def move_windows; end
+ #--------------------------------------------------------------------------
+ # * Pre-termination Processing
+ #--------------------------------------------------------------------------
+ def pre_terminate; end
+ #--------------------------------------------------------------------------
+ # * Termination Processing
+ #--------------------------------------------------------------------------
+ def terminate
+  Graphics.freeze
+  dispose_all_windows
+ end
+ #--------------------------------------------------------------------------
+ # * Create Graphic Layout for Menu Screen
+ #--------------------------------------------------------------------------
+ def create_menu_layout
+  @menulay = Sprite.new
+  @menulay.bitmap = ACE::SceneManager.background_bitmap
+  @menulay.color.set(16, 16, 16, 128)
+  @menulay.z = 100
+ end
+ #--------------------------------------------------------------------------
+ # * Dispose Graphic Layout for Menu Screen
+ #--------------------------------------------------------------------------
+ def dispose_menu_layout
+  @menulay.dispose
+ end
+ #--------------------------------------------------------------------------
+ # * Update All Windows
+ #--------------------------------------------------------------------------
+ def update_all_windows
+  instance_variables.each do |varname|
+   ivar = instance_variable_get(varname)
+   ivar.update if ivar.is_a?(Window)
+  end
+ end
+ #--------------------------------------------------------------------------
+ # * Destroy All Windows
+ #--------------------------------------------------------------------------
+ def dispose_all_windows
+  instance_variables.each do |varname|
+   ivar = instance_variable_get(varname)
+   ivar.dispose if ivar.is_a?(Window)
+  end
+ end
+ #--------------------------------------------------------------------------
+ # * Fade Out All Sounds
+ #--------------------------------------------------------------------------
+ def fadeout_all(time = 1000)
+  $game_system.se_play($data_system.decision_se)
+  Audio.bgm_fade(time)
+  Audio.bgs_fade(time)
+  Audio.me_fade(time)
+  if $ace_script[:ace_warrior_module]
+   Graphics.fadeout(time * Graphics.frame_rate / 1000)
+  end
+  Audio.bgm_stop
+  Audio.bgs_stop
+  Audio.me_stop
+ end
+ #--------------------------------------------------------------------------
+ # * Determine if Game Is Over
+ #   Transition to the game over screen if the entire party is dead.
+ #--------------------------------------------------------------------------
+ def check_gameover
+  $scene = Scene_Gameover.new if $game_party.all_dead?
+ end
+end

@@ -3,3 +3,63 @@ Vídeo 20 - Scenes :
 https://www.youtube.com/watch?v=hZiOiUI1Hy8
 
 # Scenes :
+# Tudo é mostrado dentro de uma cena 
+# Exemplos : Tela de títulos, menu de itens, mapa do jogo, etc 
+
+# Criando uma classe que vai herdar de Scene_Base :
+
+class My_Scene < Scene_Base
+    def start 
+        super
+        @test_sprite = Sprite.new
+        @test_sprite.bitmap = Cache.picture("Blanc")
+        p "ZA WARUD!"
+    end
+    def update
+        super
+        p "WRYY if Input.trigger?(:C)
+        @test_sprite.x += 1 if Input.press?(:RIGHT)
+        @test_sprite.x -= 1 if Input.press?(:LEFT)
+    end
+end 
+
+# Método start
+# Executado ao entrar na cena, não é necessário usar o super, porém é bom usar caso queira maximizar a compatibilidade com outros scripts
+# Em um mapa qualquer crie um evento, nesse evento coloque um comando de Chamar Script ( Script Call ) e dentro dele, insira o seguinte comando : SceneManager.call(My_Scene)
+# Lembrando : MyScene é o nome da classe da sua cena / scene 
+# Método update 
+# Este método será executado a cada frame, 60 frames = 1 segundo, recomendado super aqui
+# Deve ser usado para fazer atualizações gerais na sua cena
+# exemplo : 
+# checar se o jogador pressionou um botão  ( if Input.trigger?(:C))
+# mover uma imagem ( if Input.press?(:RIGHT) )
+
+class My_Scene < Scene_Base
+    def start
+        super
+        @test_sprite = Sprite.new
+        @test_sprite.bitmap = Cache.picture("Blanc")
+    end
+
+    def update
+        super
+        if Input.trigger?(:B)
+            Sound.play_cancel
+            return_scene
+    end
+
+    def terminate
+        super
+        @test_sprite.dispose
+    end
+end
+
+# Método terminate
+# Será executado assim que você estiver deixando a cena 
+# Sempre que você cria um sprite, você deixando a cena, porém este sprite continua na memória e fica aparecendo nas outras cenas, para resolver isso, basta dar um .disponse no sprite
+# Para sair de uma scene, pode usar o método return_scene ou SceneManager.return ( linha 48 )
+
+# Resumindo :
+# def start = Executado ao entrar na cena
+# def update = Executado a cada frame
+# def terminate = Executado ao sair da cena

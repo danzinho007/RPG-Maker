@@ -1,0 +1,21 @@
+Aula 03 
+https://www.youtube.com/watch?v=FCCZuwDleRM
+
+Operações com variáveis :
+
+# Pode ser usada onde foi criada e alterada :
+local = 10 
+# Pode ser usada em qualquer lugar :
+%global = "Global"
+
+# Printar o número 10 :
+number = 10
+p number
+
+# Operações com variáveis  :
+p number + 5 # Adição
+p number += 5 
+p number - 5 # Subtração
+p number * 5 # Multiplicação
+p number / 5 # Divisão
+p number % 5 # Resto da Divisão

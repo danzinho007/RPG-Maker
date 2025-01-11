@@ -243,15 +243,12 @@ Window_BattleStatus
 Herança: Window_Base
 Descrição: Esta é a classe da janela que mostra os pontos de vida (HP), os pontos de habilidade
 (SP) e o estado dos heróis durante a batalha.
+
 Window_Command
 Herança: Window_Selectable
-Descrição: Esta janela mostra uma lista de comandos. Ao contrário das outras classes que
-herdam de Window_Base, esta herda de Window_Selectable e é projetada para ser o mais
-flexível possível, permitindo que uma janela seja construída fácilmente toda vez que você quiser
+Descrição: Esta janela mostra uma lista de comandos. Ao contrário das outras classes que herdam de Window_Base, esta herda de Window_Selectable e é projetada para ser o mais flexível possível, permitindo que uma janela seja construída fácilmente toda vez que você quiser
 que o jogador escolha uma opção entre vários comandos disponíveis.
-Tutorial por Marcelo Cavaco (marcelocavaco@click21.com.br)
-73
-DEGFDEGF Conhecendo Os Scripts RGSS GFDEGFDE
+
 Window_DebugLeft
 Herança: Window_Selectable
 Descrição: Esta janela mostra grupos de dez swtichs e variables (interruptores e variáveis) que o

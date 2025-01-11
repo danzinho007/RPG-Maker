@@ -1,0 +1,24 @@
+RPG Maker XP
+RPG Maker XP (RPGXP) é uma ferramenta de construção especializada para fazer jogos de RPG. Os jogos que você cria podem ser jogados por outros usuários, mesmo que eles não tenham uma cópia do RPGXP.
+
+Recursos
+Gráficos de alta resolução
+Você pode usar gráficos de 32 bits medindo até 640 x 480 pixels. Processamento de transparência suave e efeitos translúcidos flexíveis são possíveis, graças ao suporte total ao canal alfa (transparência por pixel). RPGXP apresenta modos de mesclagem de tela de adição e subtração junto com a mesclagem de transparência usual. As fontes são automaticamente suavizadas, suavizando suas bordas e eliminando texto "pixelizado".
+
+Reprodução de áudio baseada em software
+A música de fundo (BGM) é manipulada principalmente pela reprodução MIDI do DirectMusic Synthesizer. A reprodução baseada em software significa que você não pode usar fontes de áudio externas; por outro lado, os compositores de arquivos de áudio não precisam se preocupar com suas criações suportando vários tipos de fontes MIDI. Se um arquivo MIDI for reproduzido corretamente no ambiente em que foi criado, você pode esperar que ele seja reproduzido exatamente da mesma forma em todos os ambientes.
+
+Scripting flexível e poderoso
+Os jogos que você cria no RPGXP são codificados na linguagem de script Ruby. Você pode fazer muitos jogos interessantes usando apenas os scripts integrados do programa, mas para uma criação de jogos mais avançada, você também tem a flexibilidade de personalizar tudo sobre seu jogo - do layout da tela ao sistema de batalha e tudo mais. Você não está limitado a fazer apenas RPGs.
+
+Conteúdo
+Requisitos do sistema
+Controles do jogo
+Dicas pop-up
+Projetos
+Mapas
+Eventos
+Banco de dados
+Scripting
+Especificações de material
+Fórmulas de batalha

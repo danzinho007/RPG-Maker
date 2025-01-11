@@ -1,0 +1,18 @@
+Vídeo 22 Janelas de comando
+https://www.youtube.com/watch?v=2wN4sqcTcY8
+
+# Janela de comando :
+# Serve pra mostrar opções ao jogador e, ao selecionar uma dessas opções, algo acontece
+
+# Criando a cena e a classe da janela :
+
+class Test_Scene < Scene_Base
+    def start
+        super
+    end
+end
+class My_Command < Window_Command
+    def initialize(x,y)
+        super
+    end
+end

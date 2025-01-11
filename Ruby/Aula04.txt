@@ -1,0 +1,23 @@
+Aula 04 :
+https://www.youtube.com/watch?v=gGq16NtCLQc
+
+Condições com If, Else e Elsif :
+
+Operadores Relacionais :
+
+Igual : =
+Diferente : <> ou #
+Maior que : >
+Menor que : <
+Maior ou igual : >=
+Menor ou igual : <=
+
+Operadores Lógicos :
+E : AND
+Ou : OR
+Não : NOT
+
+Verdadeiro ou Falso = V ou F :
+Pro "AND" = Só vai ser V se os 2 forem V, caso contrário será F
+Pro "OR" = Se algum for V, vai ser V
+Pro "NOT" = Não V é F, não F é V

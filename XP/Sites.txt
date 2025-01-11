@@ -1,0 +1,85 @@
+Sites :
+
+https://bigaceworld.wordpress.com/rgss/#Scenes
+
+https://centrorpg.com/index.php?topic=2075.0
+
+RPG Maker XP 
+https://centrorpg.com/index.php?board=106.0
+
+RPG Maker XP :
+https://depositodesistemasml.blogspot.com/2013/12/o-rpgmaker-testes-e-editor-de-scripts.html
+
+https://docs.google.com/spreadsheets/d/1-Oa0cRGpjC8L5JO8vdMwOaYMKO75dtfKDOetnvh7OHs/edit?gid=1186334695#gid=1186334695
+
+https://en.wikipedia.org/wiki/RPG_Maker
+
+https://forum.chaos-project.com/index.php?topic=12181.0
+
+Alternate Style Menu Scenes :
+https://forums.rpgmakerweb.com/index.php?categories/game-development-engines.3/
+
+https://forums.rpgmakerweb.com/index.php?forums/learning-ruby-and-rgssx.33/page-41
+
+RPG Maker XP Better Equip Page
+https://forums.rpgmakerweb.com/index.php?threads/mobiuss-better-equip-page.16408/
+RPG Maker XP Equip Scene 
+https://forums.rpgmakerweb.com/index.php?threads/rpg-maker-xp-equip-scene.96430/
+RPG Maker XP Scene Base
+https://forums.rpgmakerweb.com/index.php?threads/scene_base-v1-5-rmxp.168799/
+
+RPG Maker VX :
+https://forums.rpgmakerweb.com/index.php?threads/editing-scripts-without-leaving-the-game.112186/
+
+RPG Maker XP :
+https://www.gamingroom.net/rpg-maker-xp/
+https://www.gamingroom.net/rpg-maker-xp/programacao-xp/livro-de-itens-no-rpg-maker-xp/
+https://www.gamingroom.net/rpg-maker-xp/programacao-xp/sistema-de-banco-avancado-no-rmxp/
+
+RPG Maker XP : Vários tutoriais
+https://gdu.one/forums/forum/14-archived-rpg-maker-xp-scripts-rgss1/
+RPG Maker XP : Custom Status Scene
+https://gdu.one/forums/topic/4607-custom-status-scene/
+
+https://www.instructables.com/Create-a-video-game-with-RPG-Maker-XP/
+
+RPG Maker VX :
+https://lthzelda.wordpress.com/2010/04/28/rm-4-tcp-sockets-in-rpg-maker-vx/#PostPart1
+
+RPG Maker MZ e MZ :
+https://ltngames.itch.io/fenixengine-video-volume-x
+
+https://makerpedia.fandom.com/pt-br/wiki/Ruby_Game_Scripting_System
+https://makerpedia.fandom.com/pt-br/wiki/Scene
+https://makerpedia.fandom.com/pt-br/wiki/Scene_Title_(RMXP)
+
+https://www.neoseeker.com/forums/22121/
+
+https://pastebin.pl/view/88503bf1
+
+RPG Maker XP, VX :
+https://pnghero.com/png-image/MdfSFgZy/rpg-maker-xp-rpg-xp-vx-tile-based-video-game-sprite-png.html
+
+https://rmrk.net/index.php?PHPSESSID=pl09l7jr35atu7caec6p53ug1r&topic=43380.0
+https://rmrk.net/index.php?topic=45431.0
+
+https://www.rpg-maker.fr/dl/monos/aide/xp/index.html?page=source%2Frgss%2Frgss.html
+
+RPG Maker XP, MV
+https://www.rpgmakerweb.com/downloads
+
+https://rpgm.fandom.com/wiki/Ruby_Game_Scripting_System
+
+RPG Maker MZ :
+https://rpgmakerofficial.com/product/MZ_help-en/01_10.html
+
+Game Over :
+https://rpgmaker.fandom.com/wiki/Game_Over
+
+https://www.rpgmaker.net/articles/1351/
+
+https://www.sergiotoledo.com.br/videos/tutorial-ruby-aula-1:-criando-um-jogo
+
+https://tutoriais-kmc10.webnode.com.br/products/aula-instalando-e-configurando/
+
+https://www.youtube.com/watch?v=scO0nHl3gK4

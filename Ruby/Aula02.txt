@@ -1,0 +1,10 @@
+Aula 02 :
+
+Variáveis
+Pode guardar uma ou várias informações
+
+number = 10 
+string = "Texto"
+symbol = :symbol
+bool = true
+bool = false
