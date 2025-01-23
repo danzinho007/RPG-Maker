@@ -1,0 +1,193 @@
+Aual 10 : Classes ( Vídeo 08 )
+https://www.youtube.com/watch?v=vdrVZUlF4nE
+
+Classe
+Em ruby tudo é uma classe 
+Navegue pelos scripts do RPG Maker e veja
+String são da classe String
+Array são da classe Array
+Sempre começa com letra maiúscula
+Dentro da classe pode ter quantos métodos quiser
+Dentro da clase deve ter um método chamado initialize
+Deve ser chamado pra acontecer
+Diferente do método pra chamar é : NomeDoMétodo.new
+Classe é um objeto
+Quando se cria uma classe se cria uma instância dela
+Ou seja, pode guardar numa variável
+Pode criar quantos métodos quiser dentro de uma classe
+Os métodos podem ser acessados tanto dentro da classe, quanto por fora, através da variável que esteja segurando ela 
+
+Criando uma classe e chamando ela :
+class Mage
+    def initialize
+        p "O mago é implacável"
+    end
+end
+Mage.new
+
+Guardando a classe numa variável :
+variable = Mage.new
+
+Criando uma classe com argumento e guardando ela numa variável :
+
+class Mage
+    def initialize(texto)
+        p texto
+    end
+end
+variable = Mage.new("O mago é implacável")
+
+Criando uma classe com argumento, alguns métodos e guardando numa variável :
+class Mage
+    def initialize (texto)
+        p texto
+    end
+    def attack
+        p "O mago conjurou uma magia"
+    end
+end
+variable = Mage.new("O mago é implacável")
+
+Adicionando método numa clase :
+variable.attack
+
+-----------------------------
+Aula 11 : Variáveis de instância ( Vídeo 09 )
+
+Variável de Instância :
+Começa com @ 
+
+class Mago
+    def initialize
+        thing = 10
+        @weapon = "Cajado"
+    end
+    def attack
+        p "O mago atacou usando seu #(#weapon)"
+    end
+end
+player = Mago.new
+player.attack
+
+Analisando o código :
+1- Variável thing só pode ser acessada dentro do initialize, pois é local
+
+----------------------------------
+Aula 12 : Herança de classe ( Vídeo 10 )
+
+Criando uma classe chamada Modern_Mage que herda da classe Ancient_Mage :
+
+class Ancient_Mage
+    def initialize
+        @description = "Uma raça de magos capaz de conjurar magia antiga"
+    end
+    def skill_vocab(name)
+        return "Mago Antigo conjurou #{name}"
+    end
+end
+class Modern_Mage < Ancient_Mage
+    def initialize
+        super
+    end
+    def skill_vocab(name)
+        super(name)
+    end
+end
+
+1- super = Vai na classe que herda e executa o que estiver no initialize
+2- Se o método que for executado com super possuir um argumento, esse argumento deve ser passado no super ( linha 84 com 92  e 85 com 93)
+3- Se o método que for chamado com super possuir um returno como valor, o super passa a ser esse valor, então você pode usar uma variável parada guardar o valor do super ( linha 85 com 93 )
+linha 93 = old_vocab = super(name)
+
+-------------------------
+Aula 13 : Alias ( Vídeo 12 )
+
+class Scene_Title < Scene_Base
+    alias :novo_start :start
+    def start
+        p "Executado antes do método original"
+        novo_start
+        p "Executado depois do método original"
+    end
+end
+
+---------------------
+Aula 14 : Attr ( Vídeo 13 )
+
+Attr
+Maneira de acessar uma propriedade de uma classe externamente
+Só leitura, não pode alterar dados
+
+# Criando uma classe, dentro dela colocando uma variável de instância usando array :
+
+Sintaxe em ruby :
+class NomeDaClasse
+  attr_reader :atributo
+end
+
+Exemplo 01 :
+class Pessoa
+  attr_reader :nome, :idade
+
+  def initialize(nome, idade)
+    @nome = nome
+    @idade = idade
+  end
+end
+p pessoa.nome   # Saída : "Maria"
+p pessoa.idade  # Saída : 30
+
+Exemplo 02 :
+pessoa = Pessoa.new("Maria", 30)
+
+class Bread
+    attr_reader = ingredients
+    def initialize
+        @ingredients = ["Flour","Water"]
+    end
+end
+
+# Acessando a variável ingredients externamente, como se fosse um método de classe :
+item = Bread.new
+p item ingredients
+
+# att_writter
+# Funcionar de maneira contrária o reader, aqui somente pode alterar dados, jamais ler
+
+class Bread
+    att_writter : ingredients
+
+    def initialize
+        @ingredients = ["Flour","Water"]
+    end
+    def show_ingredients
+        p @ingredients
+    end
+
+end
+
+# Alterando os dados do valor de ingredients : 
+
+item = Bread.new
+item ingredients = 10
+item.show_ingredients
+
+# attt_acessor
+# Permite ler e alterar
+
+class Bread
+    attr_acessor : ingredients
+
+    def initialize
+        @ingredients = ["Flour","Water"]
+    end
+
+end
+
+# Lendo o ingredients e depois alterando ele :
+
+item = Bread.new
+p item.ingredients
+item.ingredients = 10
+p item.ingredients
+
