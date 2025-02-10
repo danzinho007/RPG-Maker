@@ -1,0 +1,55 @@
+Vídeo 24 Sprite Animado
+https://www.youtube.com/watch?v=w-KXQSINTSI
+
+# Criar animações rápidas utilizando 2 sprites 
+
+module Test_Config
+    # Criando 3 constantes : 
+    Image = "White Heart.png"
+    Size = [64,64] # Array com dimensões de cada frame
+    Frames = 2
+    Frame_Wait = 5 # Indicar o tempo de espera entre cada frame
+end
+
+class Test_Scene < Scene_Base
+    include Test_Config
+
+    def start
+        super
+        @main_sprite = Sprite.new
+        @main_sprite.bitmap = Bitmap.new("Graphics/Pictures/#(Image)")
+        @main_sprite.src_rect.set(0,0,Size(0),Size(1))
+        @countdown = Frame_Wait # Servirá como contador para os Frames
+        @current_frame = 0 # Servi pra indicar o frame atual da imagem
+        
+    end
+
+    def update
+        super
+        @countdown -= 1
+        if @countdown <= 0
+            @current_frame + 1 >= Frames ? @current_frame = 0 : @current_frame += 1
+        # Contador diminui 1 a cada frame
+        # Caso chegue a 0 ou menos, vai mudar
+        # Se for : True ? Execute isto : do contário isto
+        # Toda vez que o contador chegar 0, vai mudar par ao próximo frame
+        # Porém quando o próximo frame for maior ou igual ao número máximo de frames, ele volta ao primeiro frame
+
+            @main_sprite.src.rect.x = @current_frame * Size[0]
+            @countdown = Frame_Wait
+        # Alterando o retângulo do sprite na coordena x
+        # x será o número do frame multiplicado pelo tamanho horizontal de um frame.
+        # Fazendo o contador resetar ao número máximo de espera
+
+        @main_sprite.src_rect.x += 1 # Remover
+    end
+end
+
+Explicando :
+
+scr_rect
+Método do sprite
+Retângulo que indical a área visível do sprite
+
+scr_rect.x ou src_rect.width
+Modificar elementos individuais

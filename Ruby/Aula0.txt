@@ -1,0 +1,17 @@
+1-Chamar script :
+
+Evento : Chamar Script 
+
+MyWindow.new   # Estamos criando uma instância da Classe MyWindow 
+                                      # que iremos criar via script
+
+Script :
+
+class MyWindow < Window_Base
+   def initialize
+   # Como vamos chamar uma MessageBox na tela, não iremos 
+   # precisar inicializar os parâmetros da janela de Window_Base
+      p "Mensagem Script 1"
+   end
+  
+end

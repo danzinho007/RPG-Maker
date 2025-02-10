@@ -1,0 +1,158 @@
+Vídeo 26 Sound Test
+https://www.youtube.com/watch?v=U_tlZOivWbY
+
+# Criando uma Scene de Sound Test
+# Serve pra testar as músicas que já ouviu durante o jogo
+
+# Script de nome Sound Test 
+
+module SoundTestConfig
+
+    Sounds = {
+        :battle1 => {
+            :name => "Battle1",
+            :author => "Enterbrain, i guess..."
+        },
+        :battle2 => {
+            :name => "Battle2",
+            :author => "Hm... Enterbrain"
+        }
+    }
+
+    Sound_Volume = 100
+    Sound_Pitch = 100
+
+end
+
+class Sound_Test < Scene_Base
+    include SoundTestConfig
+
+    def start
+        super
+
+        @map_bgm = RPG::BGM.last
+        RPG::BGM.stop
+        
+        @background = Sprite.new
+        @background.bitmap = SceneManager.background_bitmap
+        @sound_list_window = Sound_List.new(0,0,Graphics.width * 0.5,
+        Graphics.height * 0.85)
+        @help_window = Sound_Test_Help.new
+        @sound_list_window = Sound_List.new(0,0,Graphics.widht * 0.5,Graphics.height - @help_window.height)
+        refresh_author
+    end
+
+    def refresh_author
+        @help_window.contentes.clear
+        @help_window.draw_text_ext(0,0,@sound_list_window.current_item(:author))
+    end
+
+    def update
+        cs = @sound_list_window.current_item
+        super
+        refresh_author if cs != @sound_list_window.current_item
+        if Input.trigger?(:C)
+            if @sound_list_window.current_item
+                RPG::BGM.new(@sound_list_window.current_item[:name],Sound_Volume,Sound_Pitch).play
+            end
+        end
+        if Input.trigger(:B)
+            SceneManager.return
+        end
+    end
+
+    def terminate
+        super
+        @map_bgm.play
+    end
+
+end
+
+# Lista de músicas : 
+class Sound_List < Window_Selectable
+    include SoundTestConfig
+    
+    def initialize(x,y,widht,height)
+        @list = []
+        make_command_list
+        super
+        draw_commands
+        select(0)
+        activate
+    end
+
+    def make_command_list
+        Sounds.each_pair do (key, sound)
+            @list.push(sound) if @game_system.unlocked_sound(key)
+        end
+    end
+
+    def draw commands
+        for i in 0... @list.size
+            rec = item_rect(i)
+            draw_text(rect.x, rect.y, width, rect.height, @list(i)(:name))
+        end
+    end
+    
+    def item_max
+        return @list.size
+    end
+
+    def current_item
+        
+    end
+
+end
+
+class Sound_Test_Help < Window_Base
+
+    def initialize(x = 0, y = Graphics.height - fitting_height(2), 
+    width = Graphics.width,height = fitting_height(2))
+        super
+    end
+
+end
+
+class Game_Interpeter
+
+    def unlock_sound
+        for s in Sounds
+            @game_system.unlocked_sounds[s] = true
+        end
+    end    
+end
+
+class Game_System
+    
+    attr_reader :unlocked_sounds
+
+    alias :sound_test_init :initialize
+    def initialize
+        sound_test_init
+        @unlocked_sounds = []
+    end
+
+end
+
+# Script do NPC :
+
+unlock_sounds( :battle1 :battle2 )
+
+SceneManager.call(Sound_Test)
+
+# Remover a música do Title Screen na database !!
+
+
+10 mariola e um mineirinho quente
+Musculação 
+-Batata doce
+-BCA
+-Whey
+
+ABC :
+-Começo da academia
+-2 músculos 
+
+ABCDE :
+-Muito tempo de academia
+-Vários músculos durante a semana

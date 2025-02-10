@@ -1,0 +1,97 @@
+Vídeo 25 Each 
+https://www.youtube.com/watch?v=7Y1wGZzfmJw
+
+# Usando Loop for em array para iterar cada elemento
+
+array = [10, 'Potion', :hero]
+
+for element in array
+    p element
+end
+
+Resultado :
+10
+"Potion"
+:hero
+
+# Usando Loop For em uma Hash 
+
+hash = [:num => 10, :item=> 'Potion', :actor => :hero]
+
+for element in hash
+    p element
+end
+
+Resultado :
+[:num, 10]
+[:item, "Potion"]
+[:actor, :hero]
+
+# Usando each
+
+hash = [:num => 10, :item=> 'Potion', :actor => :hero]
+
+hash.each do |element|
+    p element
+end
+
+Resultado :
+[:num, 10]
+[:item, "Potion"]
+[:actor, :hero]
+
+# Usando each key
+# Retorna apenas as chaves dos elementos 
+
+hash = [:num => 10, :item=> 'Potion', :actor => :hero]
+
+hash.each_key do |element|
+    p element
+end
+
+Resultado :
+:num
+:item
+:actor
+
+# Usando each_value 
+# Retorna apenas os valores de cada chave
+
+hash = [:num => 10, :item=> 'Potion', :actor => :hero]
+
+hash.each_value do |element|
+    p element
+end
+
+Resultado :
+10
+"Potion"
+:hero
+
+# Usando each_pair 
+# Retorna a chave e o elemento
+
+hash = [:num => 10, :item=> 'Potion', :actor => :hero]
+
+hash.each_pair do |key, element|
+    p key
+    p element
+    p "---"
+end
+
+Resultado :
+:num
+10
+"---"
+:item
+"Potion"
+"---"
+:actor
+:hero
+"---"
+
+# Acessar hash de dentro de um array :
+
+array = [ ( :num => 10 )]
+
+p array[0][:num]

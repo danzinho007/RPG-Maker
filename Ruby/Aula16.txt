@@ -1,0 +1,72 @@
+Vídeo 23 : Janela Selecionável 2/2
+https://www.youtube.com/watch?v=pmv41HetPqU
+
+# Criando um método chamado draw_commands
+
+class My_Select < Window_Selectable
+    def initialize(x,y,width,height)
+        make_command_list
+        super
+        draw_commands
+        activate
+        select(0)
+    end
+    def make_command_list
+        @list = []
+        commands = ["Select Me", "I am the chosen one", "Use my protag powers"]
+        for i in 0...commands.size
+            @list.push(commands(i))
+        end
+    end
+    def draw_commands
+        for i in 0...@list.size
+            rect = item_rect(i)
+        # self.draw_text(x,y,width,height,texto,alinhamento)
+        # alinhamento pode ser 0(esquerda), 1(centro) ou 2(direita)
+        # Ou pode simplesmente usar um retângulo, como mostrado abaixo
+        self.draw_text(rect, @list[i])
+        # @list[i] irá obter o comando de número i na lista, e usaremos ele como o texto a ser desenhado
+        end
+    end
+    def update
+        super
+        # Se pressionar o botão de confirmação e a janela estiver ativa, faça alguma coisa
+        if Input.trigger?(:C) && self.active
+            Sound.play_ok
+            p @list(index)
+        # index é um método que retorna o número do comando selecionado. 
+        # O primeiro comando é 0, o segundo é 1, etc
+    end
+    def item_max
+        # A lista não existe? 0. Do contrário o tamanho da lista
+        return @list.nil? ? 0 :@list.size
+    end
+end
+
+Explicando :
+
+activate
+Ativando a janela, começa desativada
+
+select(0)
+Permite fazer o cursor da janela selecionar a opção que a pessoa quer
+(0) é a primeira opção
+(1) segunda
+(2) terceira
+etc
+
+item_rect(i)
+Irá calcular automaticamente a posição para desenhar os comandos, ele precisa do número do comando para funcionar ( no caso, i ) 
+Esse método retorna um retângulo com as coordenadas
+
+draw_text
+Padrão da Window_Base
+
+def update
+    super
+end
+Atualiza a janela em todas cenas
+
+item_max
+Método padrão da Window_Selectable
+Define o número máximo de itens na janela
