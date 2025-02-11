@@ -1,0 +1,10 @@
+Cores RPG Maker :
+
+Azul:Representa as palavras do RGSS ou sintaxe deles.Algumas palavras com def, if, class,etc.
+Representa números literais como 1,2,3.
+
+Roxo:Em geral, é a cadeia de caracteres de texto (strings), veremos isso daqui a pouco.
+
+Verde:O verde representa os comentários que são utilizados por você não se perder no script.Eles não são reconhecidos pelo editor e são totalmente ignorados (Falaremos mais sobre isso).
+
+Azul claro :O azul claro representa operadores do script.Falaremos mais sobre isso depois.

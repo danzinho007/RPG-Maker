@@ -1,0 +1,3 @@
+Identificador 
+
+é o nome que damos a uma método, classe, variável,etc.O identificador deve começar por um caractere "Alfanumérico" ou por um "Underscore" também conhecido por "Underline" que é o simbolo "_".

@@ -1,0 +1,13 @@
+Pasta do jogo :
+
+Audio: Aqui contém todos os arquivos de áudios salvos, referente ao seu jogo;
+Data: Aqui você irá encontrar todos os arquivos configurados do seu jogo, desde as armas do banco de dados, os inimigos, os scripts inseridos, até os mapas do seu projeto;
+Graphics: A pasta responsável por salvar todos os arquivos de imagens do seu jogo;
+Game:
+() O executável do seu projeto. Será através deste ícone, que você ou outra pessoa poderá jogar o seu jogo, sem estar no teste do mesmo.
+( ) Os parâmetros de configurações do seu projeto: A dll do mesmo, versão do rpg maker, o RTP selecionado, o nome do jogo e etc...
+Abrindo-o no bloco de notas, você poderá visualizar todas essas informações. Apenas altere-as, se você souber o que você está fazendo!!
+( ) Clicando aqui, você ou outra pessoa poderá abrir o editor do seu jogo.
+Para evitar que isso aconteça, ao salvar o seu jogo, na opção de ''Criar disco de jogo'', marque a opção ''Encriptar projeto'', assim terceiros não poderão abrir o editor do seu jogo, e ver como você o fez.
+
+RGSS103J.dll: É a dll do seu jogo, da versão do seu rpg maker.

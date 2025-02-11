@@ -11,11 +11,13 @@ module SoundTestConfig
     Sounds = {
         :battle1 => {
             :name => "Battle1",
-            :author => "Enterbrain, i guess..."
+            :author => "Enterbrain, i guess...",
+            :description => "Just a battle theme.\nFor this lols."
         },
         :battle2 => {
             :name => "Battle2",
-            :author => "Hm... Enterbrain"
+            :author => "Hm... Enterbrain",
+            :description => "Testing this\nothing."
         }
     }
 
@@ -31,7 +33,7 @@ class Sound_Test < Scene_Base
         super
 
         @map_bgm = RPG::BGM.last
-        RPG::BGM.stop
+        RPG::BGM.fade(1000)
         
         @background = Sprite.new
         @background.bitmap = SceneManager.background_bitmap
@@ -63,7 +65,7 @@ class Sound_Test < Scene_Base
 
     def terminate
         super
-        @map_bgm.play
+        @map_bgm.play(@map_bgm.pos)
     end
 
 end

@@ -1,0 +1,25 @@
+COMANDOS DO EDITOR DE SCRIPT:
+
+Ctrl + Shift + F = Faz uma busca de qualquer palavra digitada
+Ctrl + Shift + ] = Seleciona a próxima palavra
+Ctrl + Acima/Abaixo = Move a janela e mantém o cursor na mesma posição
+Ctrl + (+ ou -) = Aumenta/Diminui o tamanho do texto
+Ctrl + T = Troca a linha pelo cursor de cima
+Ctrl + I = Coloca o espaço "TAB" real entre as palavras
+Ctrl + Del = Apaga a palavra próxima inteira
+Ctrl + J = Adiciona uma nova linha
+Ctrl + M = Mesma função do Ctrl + J mas ignora qualquer identação
+Ctrl + Enter = Fecha a janela de scripts
+Ctrl + ; = Pula de volta uma palavra inteirinha
+Ctrl + V = Cola um texto copiado/cortado
+Ctrl + X = Corta o texto
+Ctrl + C = Copia o texto
+Ctrl + Z = Desfaz as últimas alterações feitas no script
+Ctrl + ] = Pula uma palavra inteira
+Ctrl + [ = Te leva pra ultima linha do script
+Ctrl + ´ = Te leva pro inicio do script
+Ctrl + A = Seleciona todo o texto
+Ctrl + D = Duplica a linha que está no cursor por uma idêntica embaixo
+Ctrl + F = Este comando é bastante conhecido, procura no script oque for digitado.
+Ctrl + G = Vai para uma linha especifica no script
+Ctrl + H = Permite substituir uma ou mais palavras no script

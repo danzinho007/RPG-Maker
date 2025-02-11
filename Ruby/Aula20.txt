@@ -1,0 +1,18 @@
+Vídeo 27 - Partículas 
+https://www.youtube.com/watch?v=Uu4IcFF6mYE
+
+Partículas :
+-São vários sprites
+
+class Scene_Title < Scene_Base
+    
+    def start
+        super
+        @particles = []
+    end
+
+    def update
+        super
+    end
+
+end

@@ -1,0 +1,5 @@
+Siglas :
+
+RGSS - RPG Maker XP
+RGSS2 - RPG Maker VX
+RGSS3 - RPG Maker VX Ace

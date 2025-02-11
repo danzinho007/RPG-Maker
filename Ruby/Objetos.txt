@@ -1,0 +1,8 @@
+Objetos do RPG Maker :
+
+Scenes
+Windows
+Data
+Game
+Sprite
+SpriteSet
