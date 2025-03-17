@@ -1,0 +1,73 @@
+Vídeo 28 DataManager
+https://www.youtube.com/watch?v=HHSyFtoff9w
+
+Data Manager :
+-Responsável por carregar Dados
+-Responsável por salvar dados ( save do jogador )
+
+Método extract_save_contents
+Responsável por carregar os dados do jogo salvo
+
+Método make_save_contents
+Responsável por salvar todo o conteúdo principal do jogo 
+( $game_system, $game_party, etc )
+
+Método make_save_header
+Serve para criar os dados que serão salvos no cabeçalho do jogo
+( membros da equipe e tempo de jogo )
+
+1-Se salvar uma variável na classe Game_System, ela será salva junta do jogo
+Pois $game_system é uma instância de Game_System
+2-Se salvar alguma coisa com o jogo, é importante não salvar nenhum Sprite ou Bitmap, visto que eles não são suportados, se fizer o save será apagado ao tentar carregar
+3-Salvar alguma informação relacionada ao jogador : #game_player ( Game_Player )
+Salvar alguma informação relacionada ao sistema : $game_system ( Game_System )
+
+Não pode usar alias em módulos, exemplo abaixo :
+
+module DataManager
+
+    alias :my_save_alias :make_save_contents
+    def self.make_save_contents
+        my_save_alias
+    end
+
+end
+
+Funciona :
+
+class << DataManager
+
+    alias :my_save_alias :make_save_contents
+    def make_save_contents
+        my_save_alias
+    end
+
+end
+
+# Sistema de Card Game
+module Card_Game
+
+    # Cartas do Jogador
+    Player_Cards {
+        :obtained => 0, # Número de cartas obtidas
+        :cards => []    # Lista de cartas possuídas
+    }
+
+    # Classes de uma carta
+    class Card
+
+        # Propriedades públicas
+        attt_acessor :name, :hp
+
+        # Inicialização da carta
+        def initalize(name = "Monster", hp = 100)
+            @name = name
+            @hp = hp
+        end
+    end
+
+end
+
+# O sistema vê as cartas que o jogador possui
+Logo não será salvo com o jogo
+

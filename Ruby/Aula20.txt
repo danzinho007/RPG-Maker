@@ -9,10 +9,44 @@ class Scene_Title < Scene_Base
     def start
         super
         @particles = []
+        for i in 0...15 # Inserindo 15 partículas no array
+            @particles.push(Particle.new)
+        end
     end
 
-    def update
+    def update # Atualização da cena
         super
+        for particle in @particles
+            particle.update
+        end
     end
 
 end
+
+class Particle < sprite
+
+    def initialize(viewport = nil)
+        super
+        self.bitmap = Cache.battler("Slime",0)
+        setup
+    end
+
+    def setup # Método para configurar as coisas 
+              # self configura posição
+        self.x = rand(Graphics.width)
+        self.y = Graphics.height + rand(Graphics.height * 0.5)
+        @speed = 1 + rand(4)
+    end
+
+    def update # Atualização da partícula
+        super
+        self.y -= @speed
+        if self.y < - self.height # Se sair da tela, é resetada
+            setup
+        end
+    end
+
+end
+
+O initialize do Sprite precisa de um viewport
+nil = valor padrão
