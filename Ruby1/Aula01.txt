@@ -1,0 +1,19 @@
+Sites :
+
+Aula 01 :
+https://centrorpg.com/index.php?PHPSESSID=9d18137711f67a4b6168fc5880185695&topic=16769.msg127696#msg127696
+
+https://www.youtube.com/watch?v=VJ-M7O3qJkQ
+
+Comentários
+Não são executados
+
+# Comentário
+
+% Comentário
+
+=begin
+Comentário
+Comentário
+=end
+
