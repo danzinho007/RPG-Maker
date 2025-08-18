@@ -2,8 +2,9 @@
 
 Evento : Chamar Script 
 
-MyWindow.new   # Estamos criando uma instância da Classe MyWindow 
-                                      # que iremos criar via script
+MyWindow.new   
+# Estamos criando uma instância da Classe MyWindow 
+# que iremos criar via script
 
 Script :
 
@@ -15,3 +16,14 @@ class MyWindow < Window_Base
    end
   
 end
+
+Casa:
+
+Menor Casa
+https://www.youtube.com/watch?v=HVVktT6XXUU
+
+Curiosidades:
+
+Você não sabia que podia fazer isso com chefes:
+https://www.youtube.com/watch?v=iKXgAUxoey4&list=WL
+
