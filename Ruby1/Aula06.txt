@@ -1,193 +1,157 @@
-Aual 10 : Classes ( Vídeo 08 )
-https://www.youtube.com/watch?v=vdrVZUlF4nE
+Aula 06 : Métodos / Funções
+https://www.youtube.com/watch?v=ksMjJ73TyJM
 
-Classe
-Em ruby tudo é uma classe 
-Navegue pelos scripts do RPG Maker e veja
-String são da classe String
-Array são da classe Array
-Sempre começa com letra maiúscula
-Dentro da classe pode ter quantos métodos quiser
-Dentro da clase deve ter um método chamado initialize
-Deve ser chamado pra acontecer
-Diferente do método pra chamar é : NomeDoMétodo.new
-Classe é um objeto
-Quando se cria uma classe se cria uma instância dela
-Ou seja, pode guardar numa variável
-Pode criar quantos métodos quiser dentro de uma classe
-Os métodos podem ser acessados tanto dentro da classe, quanto por fora, através da variável que esteja segurando ela 
+Método 
+Será executado quando quiser, basta chamar
+Deve passar algum argumento
+Pode ser mais de 1 argumento
+Deve começar com letras minúsculas 
 
-Criando uma classe e chamando ela :
-class Mage
-    def initialize
-        p "O mago é implacável"
-    end
+def say_hello
+    p "Hello"
 end
-Mage.new
 
-Guardando a classe numa variável :
-variable = Mage.new
+Chamando o método :
+say_hello
 
-Criando uma classe com argumento e guardando ela numa variável :
+Aula 07 : Métodos e seus argumentos
+https://www.youtube.com/watch?v=LigsXRZzNbE
 
-class Mage
-    def initialize(texto)
-        p texto
-    end
+Criando um método com argumento chamado something :
+
+def say(something)
+    p something
 end
-variable = Mage.new("O mago é implacável")
 
-Criando uma classe com argumento, alguns métodos e guardando numa variável :
-class Mage
-    def initialize (texto)
-        p texto
-    end
-    def attack
-        p "O mago conjurou uma magia"
-    end
-end
-variable = Mage.new("O mago é implacável")
+Passando uma variável / valor pro método :
+say("Oi, eu sou o Goku")
 
-Adicionando método numa clase :
-variable.attack
 
------------------------------
-Aula 11 : Variáveis de instância ( Vídeo 09 )
+Criando um método com 2 argumentos :
 
-Variável de Instância :
-Começa com @ 
+player1_name = "Erik"
+player2_name = "Alex"
 
-class Mago
-    def initialize
-        thing = 10
-        @weapon = "Cajado"
-    end
-    def attack
-        p "O mago atacou usando seu #(#weapon)"
-    end
-end
-player = Mago.new
-player.attack
-
-Analisando o código :
-1- Variável thing só pode ser acessada dentro do initialize, pois é local
-
-----------------------------------
-Aula 12 : Herança de classe ( Vídeo 10 )
-
-Criando uma classe chamada Modern_Mage que herda da classe Ancient_Mage :
-
-class Ancient_Mage
-    def initialize
-        @description = "Uma raça de magos capaz de conjurar magia antiga"
-    end
-    def skill_vocab(name)
-        return "Mago Antigo conjurou #{name}"
-    end
-end
-class Modern_Mage < Ancient_Mage
-    def initialize
-        super
-    end
-    def skill_vocab(name)
-        super(name)
+def change_player_name (player, new_name)
+    if player == "Player 1"
+        player1_name = new_name
+    else
+        player2_name = new_name
     end
 end
 
-1- super = Vai na classe que herda e executa o que estiver no initialize
-2- Se o método que for executado com super possuir um argumento, esse argumento deve ser passado no super ( linha 84 com 92  e 85 com 93)
-3- Se o método que for chamado com super possuir um returno como valor, o super passa a ser esse valor, então você pode usar uma variável parada guardar o valor do super ( linha 85 com 93 )
-linha 93 = old_vocab = super(name)
+# Chamando o método e atribuindo valor pro Player 1 : 
 
--------------------------
-Aula 13 : Alias ( Vídeo 12 )
+change_player_name("Player 1", "Caped Baldy")
 
-class Scene_Title < Scene_Base
-    alias :novo_start :start
-    def start
-        p "Executado antes do método original"
-        novo_start
-        p "Executado depois do método original"
+# Criando um método com 2 argumentos, porém espeficando o primeiro argumento :
+
+layer1_name = "Erik"
+player2_name = "Alex"
+
+def change_player_name (player, new_name = "Caped Baldy")
+    if player == "Player 1"
+        player1_name = new_name
+    else
+        player2_name = new_name
     end
 end
 
----------------------
-Aula 14 : Attr ( Vídeo 13 )
+# Chamando o método apenas usando o argumento : 
 
-Attr
-Maneira de acessar uma propriedade de uma classe externamente
-Só leitura, não pode alterar dados
+change_player_name ("Player 1")
 
-# Criando uma classe, dentro dela colocando uma variável de instância usando array :
 
-Sintaxe em ruby :
-class NomeDaClasse
-  attr_reader :atributo
+Aula 08 : Return ( Vídeo 6 )
+https://www.youtube.com/watch?v=CNfiivRmT8o
+
+Return 
+Serve pra sair de um método, ignorando o resto do código
+
+def Hi
+    p "Este código será executado"
+    return
+    p "Esse aqui não"
 end
 
-Exemplo 01 :
-class Pessoa
-  attr_reader :nome, :idade
+Hi
 
-  def initialize(nome, idade)
-    @nome = nome
-    @idade = idade
-  end
-end
-p pessoa.nome   # Saída : "Maria"
-p pessoa.idade  # Saída : 30
+# Criando um método que verifica se o jogador tem pelo menos 1 carta, caso tenha escreva "É hora do duelo" :
 
-Exemplo 02 :
-pessoa = Pessoa.new("Maria", 30)
+player_cards = 0
 
-class Bread
-    attr_reader = ingredients
-    def initialize
-        @ingredients = ["Flour","Water"]
+def start_battle
+    if player_cards <= 0
+        return
+    else
+    p "É hora do duelo"
     end
 end
 
-# Acessando a variável ingredients externamente, como se fosse um método de classe :
-item = Bread.new
-p item ingredients
+start_battle
 
-# att_writter
-# Funcionar de maneira contrária o reader, aqui somente pode alterar dados, jamais ler
+Se o jogador : 
+tiver menos que 0 carta vai retornar
+tiver 0 carta vai retornar
+tiver 1 carta vai escrever "É hora do duelo"
 
-class Bread
-    att_writter : ingredients
+# Crie um método que veja a máxima pontuação de um minigame :
 
-    def initialize
-        @ingredients = ["Flour","Water"]
-    end
-    def show_ingredients
-        p @ingredients
-    end
-
+def max_minigame_score
+    return 100
 end
 
-# Alterando os dados do valor de ingredients : 
+p max_minigame_score
 
-item = Bread.new
-item ingredients = 10
-item.show_ingredients
+# Criando um método com várias condições : 
 
-# attt_acessor
-# Permite ler e alterar
+player_health = 0
+player_lives = 1
+enemy_health = 100
 
-class Bread
-    attr_acessor : ingredients
-
-    def initialize
-        @ingredients = ["Flour","Water"]
-    end
-
+def can_call_gameover?
+    return false if player_lives > 0
+    return false if player_health > 0
+    return false if player_health <= 0 && enemy_health <= 0
+    return false if enemy_health <= 0
+    return true
 end
 
-# Lendo o ingredients e depois alterando ele :
+p can_call_gameover
 
-item = Bread.new
-p item.ingredients
-item.ingredients = 10
-p item.ingredients
+# 1-O número de vidas do jogador é maior que 0 ? Sim, logo vai retornar Falso
+# 2- O número de vida do jogador é maior que 0 ? Não, logo vai retornar Falso
+# 3.1- O número de vida do jogador é menor ou igual que 0 ? Sim
+# 3.2- O número de vida do inimigo é menor ou igual que 0 ? não,
+# 3- V e F é Falso
+# 4- A vidade do inimigo é menor ou igual que 0 ? Não
+
+p can_call_gameover
+
+Aula 09 : Arrays ( Vìdeo 07 )
+https://www.youtube.com/watch?v=EMYRmJkPQH4
+
+Array
+Criado pra armazenar vários valores
+Cada item dentro de um array é chamado de elemento
+Pode alterar qualquer item igual variável
+
+Sendo o array :
+array = [10, 20, "Jon Snow"]
+
+Obtendo elemento do array : array[index]
+array[0] # 10
+array[1] # 20
+array[2] # "Jon Snow"
+
+E se colassemos -1, -2 e -3 ?
+array[-1] # "Jon Snow"
+array[-2] # 20
+array[-3] # 10
+
+Alterando elemento do array :
+
+array = [10, 20, "Jon Snow"]
+array[0] = "Dez"
+p array[0] # "Dez"
 
